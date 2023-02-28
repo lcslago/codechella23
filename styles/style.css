@@ -16,7 +16,7 @@
 }
 
 body {
-  background: var(--background-color);
+  background: var(--background-color) no-repeat;
   font-family: var(--primary-font);
 }
 
@@ -150,6 +150,7 @@ header .inner-header .inner-header__menu {
 }
 
 .banner-bottom {
+  background: var(--background-color) no-repeat;
   margin-top: 4rem;
   mix-blend-mode: multiply;
   width: 100%;

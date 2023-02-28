@@ -33,8 +33,7 @@ header .inner-header .inner-header__menu {
 }
 
 .banner-index {
-  background-image: url(/assets/img/Banner-Homepage.jpeg);
-  image-rendering: optimizeSpeed;
+  background-image: url(../assets/img/Banner-Homepage.jpg);
   background-size: 100%;
   width: 100%;
   height: 270px;
@@ -59,8 +58,7 @@ header .inner-header .inner-header__menu {
   margin: 2rem 1.5rem;
 }
 .index-about .index-about__img {
-  background-image: url(/assets/img/Homepage1.jpeg);
-  image-rendering: optimizeSpeed;
+  background-image: url(../assets/img/Homepage1.jpg);
   background-size: 185%;
   background-position: center;
   width: 100%;
@@ -166,11 +164,10 @@ header .inner-header .inner-header__menu {
 }
 
 .banner-bottom {
-  background-image: url(/assets/img/Banner-Homepage2.jpeg);
+  background-image: url(../assets/img/Banner-Homepage2.jpg);
   background-color: var(--background-color) no-repeat;
   background-size: 150%;
   background-position: center;
-  image-rendering: optimizeSpeed;
   margin-top: 4rem;
   mix-blend-mode: multiply;
   width: 100%;

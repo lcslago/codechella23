@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -23,11 +24,13 @@ body {
 header {
   background-color: var(--primary-color);
 }
+
 header .inner-header {
   display: flex;
   justify-content: space-between;
   padding: 2rem 1.5rem;
 }
+
 header .inner-header .inner-header__menu {
   padding-right: 0.4rem;
 }
@@ -57,6 +60,7 @@ header .inner-header .inner-header__menu {
   text-align: center;
   margin: 2rem 1.5rem;
 }
+
 .index-about .index-about__img {
   background-image: url(../assets/img/Homepage1.jpg);
   background-size: 185%;
@@ -73,6 +77,7 @@ header .inner-header .inner-header__menu {
   color: var(--secondary-color);
   margin-top: 2rem;
 }
+
 .text p {
   font-size: 1.25rem;
   font-weight: 500;
@@ -92,6 +97,7 @@ header .inner-header .inner-header__menu {
   border-radius: 16px;
   gap: 1rem;
 }
+
 .button p {
   font-size: 1.25rem;
   font-weight: 700;
@@ -102,6 +108,7 @@ header .inner-header .inner-header__menu {
 .line-up {
   text-align: center;
 }
+
 .line-up h3 {
   margin: 4rem 0;
   font-family: var(--secondary-font);
@@ -110,6 +117,7 @@ header .inner-header .inner-header__menu {
   line-height: 4rem;
   color: var(--secondary-color);
 }
+
 .line-up p {
   width: 257px;
   background-color: var(--quaternary-color);
@@ -121,44 +129,53 @@ header .inner-header .inner-header__menu {
   padding: 1rem;
   margin: 4rem auto 3rem auto;
 }
+
 .line-up .line-up--titulo {
   width: 286px;
   margin-top: 6rem;
 }
+
 .line-up .line-up__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
+
 .line-up .line-up__list li {
   margin: 0 1.5rem;
   list-style: none;
   color: var(--secondary-color);
 }
+
 .line-up .line-up__list li h2 {
   font-size: 3rem;
   font-weight: 800;
   line-height: 3.7rem;
 }
+
 .line-up .line-up__list li h5 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 3rem;
 }
+
 .line-up .line-up__list li h6 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 2.4rem;
 }
+
 .line-up .line-up__list li h4 {
   font-size: 2rem;
   font-weight: 500;
   line-height: 2.4rem;
 }
+
 .line-up .line-up__list .line-up__item {
   margin: 0 1rem;
 }
+
 .line-up .line-up__list .line-up__item h2 {
   margin: 0 1.5rem;
 }
@@ -178,10 +195,12 @@ header .inner-header .inner-header__menu {
   text-align: center;
   padding: 1.5rem;
 }
+
 .footer img {
   width: 234px;
   margin: 0.5rem auto 1rem auto;
 }
+
 .footer p {
   font-size: 1.25rem;
   font-weight: 500;
@@ -189,10 +208,13 @@ header .inner-header .inner-header__menu {
   color: var(--secondary-color);
   margin: 0 0.5rem;
 }
+
 .footer .footer__icons {
   display: flex;
   justify-content: center;
   margin: 0 auto 2rem auto;
   width: 32px;
   gap: 0.5rem;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

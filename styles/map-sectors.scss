@@ -1,0 +1,103 @@
+@import './style.css';
+@import './about.css';
+
+@mixin img ($url) {
+    background-image: $url;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 239px;
+    border-radius: 16px;
+}
+
+.banner__map-sectors {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 100%;
+    height: 281px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: url(../assets/img/Banner-Setores.jpg);
+        background-size: 100% 603px;
+        background-position-y: -320px;
+        opacity: .4;
+    }
+
+    h1 {
+        position: relative;
+        color: var(--secondary-color);
+        font-family: var(--secondary-font);
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+        text-align: center;
+    }
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        align-self: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__legend {
+        align-self: center;
+        list-style: none;
+
+        b {
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 2.5rem;
+            color: var(--secondary-color);
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.75rem;
+
+            p {
+                font-weight: 500;
+                font-size: 1.25rem;
+                line-height: 2.5rem;
+                color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+.map-sectors__about {
+    text-align: center;
+    margin: 2rem 1.5rem;
+}
+
+.map-sectors__img {
+    @include img(url(../assets/img/Pistas.jpg));
+    margin-top: 2rem;
+}
+
+.map-sectors__second-img {
+    @include img(url(../assets/img/Pista-premium.jpg));
+    background-size: 130%
+}
+
+.map-sectors__third-img {
+    @include img(url(../assets/img/Cadeiras.jpg));
+}

@@ -24,10 +24,12 @@ body {
 
 header {
     background-color: var(--primary-color);
+
     .inner-header {
         display: flex;
         justify-content: space-between;
         padding: 2rem 1.5rem;
+
         .inner-header__menu {
             padding-right: .4rem;
         }
@@ -58,6 +60,7 @@ header {
 .index-about {
     text-align: center;
     margin: 2rem 1.5rem;
+
     .index-about__img {
         background-image: url(../assets/img/Homepage1.jpg);
 
@@ -77,6 +80,7 @@ header {
         color: var(--secondary-color);
         margin-top: 2rem;
     }
+
     p {
         font-size: 1.25rem;
         font-weight: 500;
@@ -93,9 +97,10 @@ header {
     background-color: var(--primary-color);
     padding: .5rem 1rem;
     margin: 0 auto 2rem auto;
-    box-shadow: 4px 4px 0 0 var(--tertiary-color); 
+    box-shadow: 4px 4px 0 0 var(--tertiary-color);
     border-radius: 16px;
     gap: 1rem;
+
     p {
         font-size: 1.25rem;
         font-weight: 700;
@@ -106,6 +111,7 @@ header {
 
 .line-up {
     text-align: center;
+
     h3 {
         margin: 4rem 0;
         font-family: var(--secondary-font);
@@ -114,6 +120,7 @@ header {
         line-height: 4rem;
         color: var(--secondary-color);
     }
+
     p {
         width: 257px;
         background-color: var(--quaternary-color);
@@ -125,42 +132,51 @@ header {
         padding: 1rem;
         margin: 4rem auto 3rem auto;
     }
+
     .line-up--titulo {
         width: 286px;
         margin-top: 6rem;
     }
+
     .line-up__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 2rem;
+
         li {
             margin: 0 1.5rem;
             list-style: none;
             color: var(--secondary-color);
+
             h2 {
                 font-size: 3rem;
                 font-weight: 800;
                 line-height: 3.7rem;
             }
+
             h5 {
                 font-size: 2.5rem;
                 font-weight: 700;
                 line-height: 3rem;
             }
+
             h6 {
                 font-size: 2rem;
                 font-weight: 700;
                 line-height: 2.4rem;
             }
+
             h4 {
                 font-size: 2rem;
                 font-weight: 500;
                 line-height: 2.4rem;
             }
         }
+
         .line-up__item {
             margin: 0 1rem;
+
             h2 {
                 margin: 0 1.5rem;
             }
@@ -169,7 +185,8 @@ header {
 }
 
 .banner-bottom {
-    background-image: url(../assets/img/Banner-Homepage2.jpg); background-color: var(--background-color) no-repeat;
+    background-image: url(../assets/img/Banner-Homepage2.jpg);
+    background-color: var(--background-color) no-repeat;
     background-size: 150%;
     background-position: center;
     margin-top: 4rem;
@@ -181,10 +198,12 @@ header {
 .footer {
     text-align: center;
     padding: 1.5rem;
+
     img {
         width: 234px;
         margin: .5rem auto 1rem auto;
     }
+
     p {
         font-size: 1.25rem;
         font-weight: 500;
@@ -192,6 +211,7 @@ header {
         color: var(--secondary-color);
         margin: 0 .5rem;
     }
+
     .footer__icons {
         display: flex;
         justify-content: center;

@@ -1,6 +1,6 @@
 @import './style.css';
 
-@mixin banners {
+@mixin banners ($imagem) {
     background-color: rgba(0, 0, 0, 0.2);
     position: relative;
     width: 100%;
@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     &::before {
         content: "";
         position: absolute;
@@ -16,11 +17,12 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
-        background-image: url(../assets/img/Banner-A-Experiência.jpg);
+        background-image: $imagem;
         background-size: 155%;
         background-position-x: -20px;
         opacity: .4;
     }
+
     h1 {
         position: relative;
         color: var(--secondary-color);
@@ -29,16 +31,17 @@
         font-weight: 400;
         line-height: 2.6rem;
         text-align: center;
-      }
+    }
 }
 
 .banner-about {
-    @include banners();
+    @include banners(url(../assets/img/Banner-A-Experiência.jpg));
 }
 
 .about-about {
     text-align: center;
     margin: 2rem 1.5rem;
+
     .about-img {
         background-image: url(../assets/img/A-Experiêcia1.jpg);
         background-size: 100%;

@@ -1,6 +1,5 @@
 @import './style.css';
 @import './about.css';
-
 .banner__map-sectors {
   background-color: rgba(0, 0, 0, 0.2);
   position: relative;
@@ -11,7 +10,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .banner__map-sectors::before {
   content: "";
   position: absolute;
@@ -24,7 +22,6 @@
   background-position-y: -320px;
   opacity: 0.4;
 }
-
 .banner__map-sectors h1 {
   position: relative;
   color: var(--secondary-color);
@@ -39,34 +36,28 @@
   display: flex;
   flex-direction: column;
 }
-
 .map__img {
   align-self: center;
 }
-
 .map__img img {
   width: 100%;
 }
-
 .map__legend {
   align-self: center;
   list-style: none;
 }
-
 .map__legend b {
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 2.5rem;
   color: var(--secondary-color);
 }
-
 .map__legend li {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-top: 1.75rem;
 }
-
 .map__legend li p {
   font-weight: 500;
   font-size: 1.25rem;
@@ -106,6 +97,4 @@
   width: 100%;
   height: 239px;
   border-radius: 16px;
-}
-
-/*# sourceMappingURL=map-sectors.css.map */
+}/*# sourceMappingURL=map-sectors.css.map */

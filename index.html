@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="assets/icons/codechella-icon.png">
     <title>Codechella Valley Code and Techs Festival</title>
 </head>
 
@@ -15,20 +16,31 @@
             <img src="assets/img/Logo1 1.svg" alt="Festival Codechella 2023">
             <img src="assets/icons/menu.svg" alt="Acesso ao menu" class="inner-header__menu">
         </div>
-        <div class="inner-header__menu--alt">
-            <p>
-                <bold>A experiência</bold>
-            </p>
-            <p>
-                <bold>Mapa de Setores</bold>
-            </p>
-            <p>
-                <bold>Informações</bold>
-            </p>
-            <p>
-                <bold>Ingresso</bold>
-            </p>
-        </div>
+        <ul class="inner-header__menu--alt">
+            <li>
+                <p>
+                    <bold>A experiência</bold>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <bold>Mapas de Setores</bold>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <bold>Informações</bold>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <bold>Ingresso</bold>
+                </p>
+            </li>
+        </ul>
     </header>
     <main>
 
@@ -40,40 +52,46 @@
             <div class="index-about__img">
 
             </div>
-            <div class="text">
-                <h6>
-                    < 11 e 12 de Março>
-                        Aluródromo de São Paulo
-                </h6>
-                <p>
-                    Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens
-                    e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!
-                </p>
+            <div class="index-text--container">
+                <div class="text">
+                    <h6>
+                        < 11 e 12 de Março>
+                            Aluródromo de São Paulo
+                    </h6>
+                    <p>
+                        Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música,
+                        linguagens
+                        e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!
+                    </p>
+                </div>
+                <div class="button">
+                    <p>Comprar ingresso!</p>
+                    <img src="assets/icons/ticket.svg" alt="Ícone para compra de ingresso">
+                </div>
             </div>
         </section>
-
-        <div class="button">
-            <p>Comprar ingresso!</p>
-            <img src="assets/icons/ticket.svg" alt="Ícone para compra de ingresso">
-        </div>
 
         <section class="line-up">
             <h3>/Line-Up/</h3>
             <div class="border--container">
                 <div class="border-left">
-                </div> 
+                </div>
                 <p>
                     <span class="line-up__day">
                         SÁBADO <11 /03>
                     </span>
-                </p>   
+                </p>
                 <div class="border-right">
                 </div>
-            </div>  
-            <ul class="line-up__list">
+            </div>
+
+            <ul class="line-up__list--wrapper">
                 <li>
                     <h2>System of a DOM</h2>
                 </li>
+            </ul>
+
+            <ul class="line-up__list">
                 <li>
                     <h5>Python Maiden</h5>
                 </li>
@@ -116,20 +134,23 @@
         <section class="line-up">
             <div class="border--container">
                 <div class="border-left">
-                </div> 
+                </div>
                 <p>
                     <span class="line-up__day line-up__day--alt">
                         DOMINGO <12 /03>
                     </span>
-                </p>  
+                </p>
                 <div class="border-right">
                 </div>
-            </div> 
-            
-            <ul class="line-up__list line-up__list--alt">
+            </div>
+
+            <ul class="line-up__list--wrapper">
                 <li class="line-up__item">
                     <h2>Lana Del Ploy</h2>
                 </li>
+            </ul>
+
+            <ul class="line-up__list line-up__list--alt">
                 <li class="line-up__item">
                     <h5>Dua Lib</h5>
                 </li>
@@ -143,7 +164,7 @@
                     <h5>ArrayAna Grande</h5>
                 </li>
                 <li class="line-up__item">
-                    <h6>DJ Query</h6>
+                    <h5>DJ Query</h5>
                 </li>
                 <li class="line-up__item">
                     <h6>Miley Cypress</h6>
@@ -178,17 +199,21 @@
 
     </main>
     <footer class="footer">
-        <img src="assets/img/Logo1 1.svg" alt="Festival Codechella 2023">
-        <div class="footer--container">
-            <p>Acesse nossas redes:</p>
-            <div class="footer__icons">
-                <img src="assets/icons/wpp.svg" alt="Whatsapp">
-                <img src="assets/icons/twitch.svg" alt="Twitch">
-                <img src="assets/icons/insta.svg" alt="Instagram">
-                <img src="assets/icons/twitter.svg" alt="Twitter">
+        <div class="footer__visual">
+            <img src="assets/img/Logo1 1.svg" alt="Festival Codechella 2023">
+            <div class="footer--container">
+                <p>Acesse nossas redes:</p>
+                <div class="footer__icons">
+                    <img src="assets/icons/wpp.svg" alt="Whatsapp">
+                    <img src="assets/icons/twitch.svg" alt="Twitch">
+                    <img src="assets/icons/insta.svg" alt="Instagram">
+                    <img src="assets/icons/twitter.svg" alt="Twitter">
+                </div>
             </div>
         </div>
-        <p>Desenvolvido por Lucas Lago. Projeto fictício sem fins comerciais.</p>
+        <div class="footer__text">
+            <p>Desenvolvido por Lucas Lago. <br> Projeto fictício sem fins comerciais.</p>
+        </div>
     </footer>
 </body>
 

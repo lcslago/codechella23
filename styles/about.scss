@@ -1,4 +1,5 @@
 @import './style.css';
+@import './style.scss';
 
 @mixin banners ($imagem) {
     background-color: rgba(0, 0, 0, 0.2);
@@ -67,4 +68,126 @@
         height: 381px;
         border-radius: 16px;
     }
+}
+
+@media screen and (min-width: $first-min-width) {
+    .banner-about {
+        height: 384px;
+
+        &::before {
+            background-size: 100%;
+            background-position: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            line-height: 5.2rem;
+        }
+    }
+
+    .about-about {
+        margin: 2rem 3.9rem;
+        text-align: center;
+        .text {
+            margin: 2rem 0;
+            h6 {
+                margin: 2rem 0 0 0;
+                padding: 0;
+            }
+            p {
+                margin: 0;
+                padding: .5rem 0 2rem 0;
+            }
+            &--alt {
+                margin: 2rem 3.6rem;
+            }
+        }
+        
+        .about-img {
+            background-size: 100%;
+            background-position: center;
+            background-position-y: -100px;
+            width: 95%;
+            margin: auto;
+        }
+    
+        .about-second-img {
+            background-size: 100%;
+            background-position: center;
+            width: 95%;
+            margin: auto;
+        }
+    
+        .about-third-img {
+            background-position: center;
+            width: 95%;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width: $second-min-width) {
+    .banner-about {
+        height: 407px;
+        &::before {
+            background-position: top;
+        }
+    }
+
+    .about-about {
+        margin: 4rem 7.6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+        .about--container {
+            display: flex;
+            gap: 3rem;
+            justify-content: center;
+            align-items: center;
+            .text {
+                width: 45%;
+                text-align: left;
+                margin: 0;
+                h6 {
+                    margin: 2rem 0 1.5rem 0;
+                }
+                &--alt {
+                    width: 50%;
+                    text-align: left;
+                    margin: 0;
+                }
+            }
+            &-alt {
+                display: flex;
+                flex-direction: row-reverse;
+                gap: 3rem;
+                justify-content: center;
+                align-items: center;
+                .text {
+                    width: 50%;
+                    text-align: right;
+                    margin: 0;
+                    h6 {
+                        margin: 2rem 0 1.5rem 0;
+                    }
+                }
+
+            }
+        }
+
+        .about-img {
+            background-position-y: -95px;
+            width: 50%;
+        }
+
+        .about-second-img {
+            background-size: 110%;
+            width: 53%;
+            margin-right: 2rem;
+        }
+
+        .about-third-img {
+            width: 50%;
+        }
+    }   
 }

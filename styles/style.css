@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -24,17 +23,14 @@ body {
 header {
   background-color: var(--primary-color);
 }
-
 header .inner-header {
   display: flex;
   justify-content: space-between;
   padding: 2rem 1.5rem;
 }
-
 header .inner-header .inner-header__menu {
   padding-right: 0.4rem;
 }
-
 header .inner-header__menu--alt {
   display: none;
 }
@@ -50,7 +46,6 @@ header .inner-header__menu--alt {
   justify-content: center;
   align-items: center;
 }
-
 .banner-index .banner-title {
   text-align: center;
   color: var(--secondary-color);
@@ -64,7 +59,6 @@ header .inner-header__menu--alt {
   text-align: center;
   margin: 2rem 1.5rem;
 }
-
 .index-about .index-about__img {
   background-image: url(../assets/img/Homepage1.jpg);
   background-size: 185%;
@@ -81,7 +75,6 @@ header .inner-header__menu--alt {
   color: var(--secondary-color);
   margin-top: 2rem;
 }
-
 .text p {
   font-size: 1.25rem;
   font-weight: 500;
@@ -101,7 +94,6 @@ header .inner-header__menu--alt {
   border-radius: 16px;
   gap: 1rem;
 }
-
 .button p {
   font-size: 1.25rem;
   font-weight: 700;
@@ -112,7 +104,6 @@ header .inner-header__menu--alt {
 .line-up {
   text-align: center;
 }
-
 .line-up h3 {
   margin: 4rem 0 6rem 0;
   font-family: var(--secondary-font);
@@ -121,23 +112,19 @@ header .inner-header__menu--alt {
   line-height: 4rem;
   color: var(--secondary-color);
 }
-
 .line-up .line-up__list--wrapper {
   margin: 4rem 0 2rem 0;
 }
-
 .line-up .line-up__list--wrapper li {
   margin: 0 1.5rem;
   list-style: none;
   color: var(--secondary-color);
 }
-
 .line-up .line-up__list--wrapper li h2 {
   font-size: 3rem;
   font-weight: 800;
   line-height: 3.7rem;
 }
-
 .line-up__day {
   width: 257px;
   background-color: var(--quaternary-color);
@@ -149,12 +136,10 @@ header .inner-header__menu--alt {
   padding: 1rem;
   margin: 4rem auto 3rem auto;
 }
-
 .line-up__day--alt {
   width: 286px;
   margin-top: 6rem;
 }
-
 .line-up .line-up__list {
   display: flex;
   flex-wrap: wrap;
@@ -163,41 +148,34 @@ header .inner-header__menu--alt {
   gap: 2rem;
   margin: 0 0 5rem 0;
 }
-
 .line-up .line-up__list li {
   margin: 0 1.5rem;
   list-style: none;
   color: var(--secondary-color);
 }
-
 .line-up .line-up__list li h2 {
   font-size: 3rem;
   font-weight: 800;
   line-height: 3.7rem;
 }
-
 .line-up .line-up__list li h5 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 3rem;
 }
-
 .line-up .line-up__list li h6 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 2.4rem;
 }
-
 .line-up .line-up__list li h4 {
   font-size: 2rem;
   font-weight: 500;
   line-height: 2.4rem;
 }
-
 .line-up .line-up__list .line-up__item {
   margin: 0 1rem;
 }
-
 .line-up .line-up__list .line-up__item h2 {
   margin: 0 1.5rem;
 }
@@ -217,12 +195,10 @@ header .inner-header__menu--alt {
   text-align: center;
   padding: 1.5rem;
 }
-
 .footer img {
   width: 234px;
   margin: 0.5rem auto 1rem auto;
 }
-
 .footer p {
   font-size: 1.25rem;
   font-weight: 500;
@@ -230,7 +206,6 @@ header .inner-header__menu--alt {
   color: var(--secondary-color);
   margin: 0 0.5rem;
 }
-
 .footer .footer__icons {
   display: flex;
   justify-content: center;
@@ -245,16 +220,13 @@ header .inner-header__menu--alt {
     justify-content: space-between;
     padding: 2rem 1.5rem;
   }
-
   header .inner-header img {
     width: 40%;
     align-self: center;
   }
-
   header .inner-header__menu {
     display: none;
   }
-
   header .inner-header__menu--alt {
     display: flex;
     justify-content: space-evenly;
@@ -262,77 +234,63 @@ header .inner-header__menu--alt {
     padding-bottom: 2.5rem;
     list-style: none;
   }
-
   header .inner-header__menu--alt p {
     font-size: 1.25rem;
     line-height: 2.5rem;
     font-weight: 700;
     color: var(--secondary-color);
   }
-
   .banner-index {
     height: 384px;
     background-position: center;
   }
-
   .banner-index .banner-title {
     font-size: 4rem;
     line-height: 5.2rem;
   }
-
   .index-about .index-about__img {
     background-size: 105%;
     background-position: center;
     width: 90%;
     margin: auto;
   }
-
   .text h6 {
     padding: 0 10rem;
   }
-
   .text p {
     padding: 1.5rem 2.5rem 0 2.5rem;
   }
-
   .button {
     width: 250px;
     padding: 1rem 1rem;
   }
-
   .button img {
     width: 32px;
     height: 40px;
   }
-
   .line-up {
     text-align: center;
   }
-
   .line-up h3 {
     margin: 6rem 0;
     font-size: 4rem;
     line-height: 5.2rem;
   }
-
   .line-up .border--container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .line-up .border--container .border-left {
     border-top: 2px solid var(--quaternary-color);
     width: 12%;
     margin: auto;
   }
-
   .line-up .border--container .border-right {
     border-top: 2px solid var(--quaternary-color);
     width: 12%;
     margin: auto;
   }
-
   .line-up__day {
     width: 417px;
     font-weight: 400;
@@ -340,50 +298,40 @@ header .inner-header__menu--alt {
     line-height: 4rem;
     padding: 1.3rem 1rem;
   }
-
   .line-up .line-up__list {
     margin: 2rem 3rem 5rem 3rem;
   }
-
   .line-up .line-up__list li {
     margin: 0;
   }
-
   .line-up .line-up__list .line-up__item {
     margin: 0;
   }
-
   .line-up .line-up__list .line-up__item h2 {
     margin: 0;
     padding: 0;
   }
-
   .line-up .line-up__list--alt {
     margin: 0 2rem;
   }
-
   .line-up .line-up__list--wrapper {
     margin: 5rem 0 2rem 0;
     margin-top: 5rem;
   }
-
   .banner-bottom {
     background-size: 130%;
     background-position-y: -60px;
     background-position-x: -160px;
   }
-
   .footer {
     text-align: center;
     padding: 1.5rem;
     padding-bottom: 3rem;
   }
-
   .footer img {
     width: 234px;
     margin: 0.5rem auto 1rem auto;
   }
-
   .footer--container {
     display: flex;
     justify-content: center;
@@ -391,17 +339,14 @@ header .inner-header__menu--alt {
     gap: 4.5rem;
     margin-bottom: 2rem;
   }
-
   .footer--container p {
     margin: 0;
   }
-
   .footer--container .footer__icons {
     margin: 0;
     margin-right: 3.5rem;
   }
 }
-
 @media screen and (min-width: 1366px) {
   header {
     display: flex;
@@ -409,16 +354,17 @@ header .inner-header__menu--alt {
     justify-content: space-around;
     align-content: center;
   }
-
   header .inner-header img {
     width: 100%;
   }
-
   header .inner-header__menu--alt {
     gap: 2rem;
     padding: 0;
   }
-
+  .banner-index {
+    height: 407px;
+    background-position: center;
+  }
   .index-about {
     display: flex;
     justify-content: center;
@@ -426,13 +372,11 @@ header .inner-header__menu--alt {
     margin: 4rem 5rem;
     gap: 5rem;
   }
-
   .index-about .index-about__img {
     background-size: 115%;
     width: 50%;
     margin: 0;
   }
-
   .index-text--container {
     margin: 0;
     display: flex;
@@ -441,62 +385,49 @@ header .inner-header__menu--alt {
     width: 42%;
     gap: 1.5rem;
   }
-
   .index-text--container .text {
     margin: 0;
   }
-
   .index-text--container .text h6 {
     padding: 0;
     margin: 0 auto 1.5rem auto;
     width: 88%;
   }
-
   .index-text--container .text p {
     padding: 0;
     margin: 0;
   }
-
   .index-text--container .button {
     padding: 0.5rem 1rem;
     margin: 0;
   }
-
   .line-up h3 {
     margin: 5rem 0;
   }
-
   .line-up .border--container {
     justify-content: space-evenly;
     margin: 0 3rem;
   }
-
   .line-up .border--container .border-left {
     width: 25%;
   }
-
   .line-up .border--container .border-right {
     width: 25%;
   }
-
   .line-up__day {
     padding: 1rem;
   }
-
   .line-up .line-up__list {
     margin: 2rem 6rem 5rem 6rem;
   }
-
   .line-up .line-up__list--alt {
     margin: 0 4.5rem;
   }
-
   .banner-bottom {
     background-size: 100%;
     background-position: center;
     background-position-y: -133px;
   }
-
   .footer {
     display: flex;
     justify-content: space-between;
@@ -505,15 +436,11 @@ header .inner-header__menu--alt {
     gap: 8rem;
     text-align: left;
   }
-
   .footer img {
     width: 307px;
     margin: 0;
   }
-
   .footer--container .footer__icons {
     margin-right: 0;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

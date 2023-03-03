@@ -1,5 +1,6 @@
 @import './style.css';
 @import './about.css';
+@import './style';
 
 @mixin img ($url) {
     background-image: $url;
@@ -59,6 +60,7 @@
     &__legend {
         align-self: center;
         list-style: none;
+        margin-top: 1rem;
 
         b {
             font-weight: 700;
@@ -100,4 +102,167 @@
 
 .map-sectors__third-img {
     @include img(url(../assets/img/Cadeiras.jpg));
+}
+
+@media screen and (min-width: $first-min-width) {
+    .banner__map-sectors {
+        height: 384px;
+    
+        &::before {
+            background-size: 100% 900px;
+            background-position: center;
+            background-position-y: -480px;
+        }
+    
+        h1 {
+            font-size: 4rem;
+            line-height: 5.2rem;
+        }
+    }
+
+    .map {
+
+        &__img {
+            align-self: center;
+            padding: 2rem 2rem 0 2rem;
+        }
+
+        &__legend {
+            margin-top: 2rem;
+
+            b {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .map-sectors__about {
+        text-align: center;
+        margin: 2rem 1.5rem;
+        .text {
+            &--title {
+                margin: 0;
+                padding: 2.5rem 0 0 0;
+                font-size: 2.5rem;
+            }
+            p {
+                margin-top: 0;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    
+    .map-sectors__img {
+        margin: 2rem auto auto auto;
+        width: 50%
+    }
+    
+    .map-sectors__second-img {
+        background-size: 110%;
+        width: 50%;
+        margin: auto;
+    }
+    
+    .map-sectors__third-img {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: $second-min-width) {
+    .banner__map-sectors {
+        height: 407px;
+        
+        &::before {
+            background-size: 100% 930px;
+            background-position-y: -485px;
+        }
+    }
+
+    .map {
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+        padding: 0 7rem 0 7rem;
+
+        &__legend {
+            margin: 0;
+        }
+    }
+    
+    .map-sectors__about {
+        margin: 5rem 0 0 0;
+        .text {
+            margin: 0;
+            h6 {
+                margin: 0;
+                padding: 1rem;
+            }
+            p {
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .map-sectors--container {
+            display: flex;
+            height: 700px;
+            margin: 2rem 5.5rem;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            .map-sectors--child {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 33%;
+                margin-bottom: auto;
+
+                h6 {
+                    margin: 0;
+                    padding: 1rem 0 2rem 0;
+                }
+                p {
+                    margin: 0 .7rem;
+                    padding: 0;
+                }
+            }
+            .second--container {
+                width: 33%;
+                margin-top: auto;
+                h6 {
+                    padding: 1rem 0 2rem 0;
+                }
+                p {
+                    margin: 0;
+                    padding: 0 .8rem;
+                }
+            }
+            .third--container {
+                p {
+                    padding: 0;
+                    margin: 0 1rem;
+                }
+            }
+        }
+    } 
+    
+    .map-sectors__img {
+        width: 27vw;
+        margin: 0;
+        padding: 0;
+
+    }
+    
+    .map-sectors__second-img {
+        width: 27vw;
+
+    }
+    
+    .map-sectors__third-img {
+        width: 27vw;
+
+    }
+    
 }

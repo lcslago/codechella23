@@ -440,7 +440,10 @@ header .inner-header__menu--alt {
     width: 307px;
     margin: 0;
   }
-  .footer--container .footer__icons {
+  .footer .footer--container p {
+    margin-top: 0.5rem;
+  }
+  .footer .footer--container .footer__icons {
     margin-right: 0;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -533,7 +533,10 @@ header {
             margin: 0;
         }
 
-        &--container {
+        .footer--container {
+            p {
+                margin-top: .5rem;
+            }
             .footer__icons {
                 margin-right: 0;
             }

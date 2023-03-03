@@ -13,32 +13,60 @@
 <body>
     <header>
         <nav class="inner-header">
-            <img src="assets/img/Logo1 1.svg" alt="Festival Codechella 2023">
-            <img src="assets/icons/menu.svg" alt="Acesso ao menu" class="inner-header__menu">
+            <a href="/index.html"><img src="assets/img/Logo1 1.svg" alt="Festival Codechella 2023"></a>
+            <nav class="menu--mobile__lista">
+                <input type="checkbox" id="menu" class="menu--mobile">
+                <label for="menu">
+                    <img src="assets/icons/menu.svg" alt="Acesso ao menu" class="inner-header__menu">
+                </label>
+                <ul class="inner-header__menu--mobile">
+                    <li>
+                        <a class="link" href="/about.html">
+                            <bold>A experiência</bold>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a class="link" href="/map-sectors.html">
+                            <bold>Mapas de Setores</bold>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a class="link" href="">
+                            <bold>Informações</bold>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a class="link" href="">
+                            <bold>Ingresso</bold>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </nav>
+
         <ul class="inner-header__menu--alt">
             <li>
-                <p>
+                <a class="link" href="/about.html">
                     <bold>A experiência</bold>
-                </p>
+                </a>
             </li>
-
             <li>
-                <p>
+                <a class="link" href="/map-sectors.html">
                     <bold>Mapas de Setores</bold>
-                </p>
+                </a>
             </li>
-
             <li>
-                <p>
+                <a class="link" href="">
                     <bold>Informações</bold>
-                </p>
+                </a>
             </li>
-
             <li>
-                <p>
+                <a class="link" href="">
                     <bold>Ingresso</bold>
-                </p>
+                </a>
             </li>
         </ul>
     </header>

@@ -71,6 +71,14 @@
 }
 
 @media screen and (min-width: $first-min-width) {
+    .inner-header__menu--alt {
+        li:first-child {
+            .link {
+                text-decoration: underline;
+            }
+        }
+    }
+
     .banner-about {
         height: 384px;
 

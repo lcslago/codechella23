@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import './style.css';
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
 * {
@@ -488,4 +490,120 @@ header .menu--mobile:checked ~ .inner-header__menu--mobile {
   .footer .footer--container .footer__icons {
     margin-right: 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+.banner-info {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-info::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(../assets/img/Banner-Informações.jpg);
+  background-size: 115%;
+  background-position: center;
+  opacity: 0.4;
+}
+
+.banner-title {
+  position: relative;
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.info__about {
+  padding: 3rem 1.5rem;
+}
+
+.card__ask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+}
+.card__ask h6 {
+  margin: 0;
+}
+.card__ask img {
+  padding-right: 0.5rem;
+}
+
+.card__answer {
+  background-color: var(--quinary-color);
+  padding: 1rem;
+}
+.card__answer p {
+  margin: 0;
+  color: var(--tertiary-color);
+}
+.card__answer p a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: var(--tertiary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .inner-header__menu--alt li:nth-child(3) .link {
+    text-decoration: underline;
+  }
+  .banner-info {
+    height: 384px;
+  }
+  .banner-info::before {
+    background-size: 100%;
+    background-position: center;
+  }
+  .banner-info h1 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+  .banner-title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .info__about {
+    padding: 3rem 3.75rem;
+  }
+  .card__ask {
+    justify-content: space-between;
+  }
+  .card__ask h6 {
+    padding: 0;
+  }
+  .card__ask img {
+    padding-right: 0.5rem;
+  }
+  .card__answer p {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .banner-info {
+    height: 407px;
+  }
+  .banner-info::before {
+    background-position-y: -350px;
+  }
+  .info__about {
+    padding: 3rem 12rem;
+  }
+  .footer {
+    padding: 3rem 6rem 0 6rem;
+  }
+}/*# sourceMappingURL=info.css.map */

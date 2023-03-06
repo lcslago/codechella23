@@ -15,6 +15,7 @@ $second-min-width: 1366px;
     --secondary-color: #FFFFFF;
     --tertiary-color: #444444;
     --quaternary-color: #008364;
+    --quinary-color: #C8DEEF;
 
     --primary-font: 'Raleway', sans-serif;
     --secondary-font: 'Calistoga', cursive;
@@ -36,7 +37,6 @@ header {
 
         .inner-header__menu {
             padding-right: .4rem;
-            padding-top: .5rem;
             width: 32px;
             height: 40px;
         }
@@ -65,6 +65,7 @@ header {
         }
         hr {
             margin: 0 2rem;
+            border: 1px solid var(--secondary-color);
         }
         
       }
@@ -268,6 +269,7 @@ header {
 .footer {
     text-align: center;
     padding: 1.5rem;
+    background-color: var(--primary-color);
 
     img {
         width: 234px;
@@ -435,7 +437,6 @@ header {
         text-align: center;
         padding: 1.5rem;
         padding-bottom: 3rem;
-
         img {
             width: 234px;
             margin: .5rem auto 1rem auto;
@@ -568,9 +569,10 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 3rem 6rem 0 6rem;
+        padding: 3rem 6rem 0 6rem;
         gap: 8rem;
         text-align: left;
+        margin: 0;
 
         img {
             width: 307px;

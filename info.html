@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/map-sectors.css">
+    <link rel="stylesheet" href="styles/info.css">
     <link rel="icon" href="assets/icons/codechella-icon.png">
     <title>Codechella Valley Code and Techs Festival</title>
 </head>
-
 <body>
     <header>
         <nav class="inner-header">
-            <a href="./index.html"><img src="assets/img/Logo1 1.svg" alt="Festival Codechella 2023"></a>  
+            <a href="./index.html"><img src="assets/img/Logo1 1.svg" alt="Festival Codechella 2023"></a>
             <nav class="menu--mobile__lista">
                 <input type="checkbox" id="menu" class="menu--mobile">
                 <label for="menu">
@@ -47,6 +45,7 @@
                 </ul>
             </nav>
         </nav>
+
         <ul class="inner-header__menu--alt">
             <li>
                 <a class="link" href="./about.html">
@@ -70,88 +69,65 @@
             </li>
         </ul>
     </header>
+
     <main>
-        <div class="banner__map-sectors">
-            <h1>Mapa de Setores</h1>
+
+        <div class="banner-info">
+            <h1 class="banner-title">Informações Gerais</h1>
         </div>
 
-        <section class="map">
-            <div class="map__img">
-                <img src="assets/img/mapa.png" alt="Mapa do evento">
-            </div>
-            <ul class="map__legend">
-                <p><b>Legenda:</b></p>
-                <li>
-                    <img src="assets/icons/pista-premium.svg" alt="Pista Premium">
-                    <p>Pista Premium</p>
-                </li>
-                <li>
-                    <img src="assets/icons/pista-comum.svg" alt="Pista Comum">
-                    <p>Pista Comum</p>
-                </li>
-                <li>
-                    <img src="assets/icons/cadeiras-terreo.svg" alt="Cadeiras térreo">
-                    <p>Cadeiras térreo</p>
-                </li>
-                <li>
-                    <img src="assets/icons/cadeiras-superiores.svg" alt="Cadeiras superiores">
-                    <p>Cadeiras superiores</p>
-                </li>
-                <li>
-                    <img src="assets/icons/rampas.svg" alt="Rampas">
-                    <p>Rampas</p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="map-sectors__about">
+        <div class="info__about">
+            <p class="banner-title">Perguntas Frequentes:</p>
             <div class="text">
-                <h6 class="text--title">Mais detalhes sobre os setores:</h6>
-
-                <div class="map-sectors--container first">
-                    <div class="map-sectors--child">
-                        <div class="map-sectors__img">
-    
-                        </div>
-
-                        <h6>Pista</h6>
-                        <p>
-                            Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com
-                            local para sentar e descansar. Separada da pista premium por uma grade.
-                        </p>
+                <div class="cards">
+                    <div class="card__ask">
+                        <h6>Quais serão as atrações?</h6>
+                        <img src="assets/icons/arrow-drop-down.svg" alt="Seta para resposta">
                     </div>
-    
-                    <div class="map-sectors--child second--container">
-                        <div class="second">
-
-                        </div>
-                        <div class="map-sectors__second-img">
-    
-                        </div>
-
-                        <h6>Pista Premium</h6>
+                    <div class="card__answer">
                         <p>
-                            Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as
-                            pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.
-                        </p>
-                    </div>
-    
-                    <div class="map-sectors--child third--container">
-                        <div class="map-sectors__third-img">
-    
-                        </div>
-
-                        <h6>Cadeiras</h6>
-                        <p>
-                            Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em
-                            relação às pistas.
+                            Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, e o segundo (12/03) com bandas pop. <a href="./index.html">Confira o line-up em detalhes clicando neste link</a>!
                         </p>
                     </div>
                 </div>
+                <div class="cards">
+                    <div class="card__ask">
+                        <h6>Qual é a classificação etária?</h6>
+                        <img src="assets/icons/arrow-drop-down.svg" alt="Seta para resposta">
+                    </div>
+                    <div class="card__answer">
+                        <p>
+                            O CodeChella é um festival para todas as idades. Apesar disso, as pessoas com menos de 18 anos devem estar acompanhadas de um tutor legal. 
+                        </p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card__ask">
+                        <h6>Quais são os setores disponíveis?</h6>
+                        <img src="assets/icons/arrow-drop-down.svg" alt="Seta para resposta">
+                    </div>
+                    <div class="card__answer">
+                        <p>
+                            Temos uma seção especial que conta com um mapa e informações detalhadas sobre os diferentes setores do evento. <a href="./map-sectors.html">Você pode acessá-lo aqui!</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card__ask">
+                        <h6>Quais são os itens proibidos?</h6>
+                        <img src="assets/icons/arrow-drop-down.svg" alt="Seta para resposta">
+                    </div>
+                    <div class="card__answer">
+                        <p>
+                            Animais, bicicletas e outros itens esportivos, itens com símbolos divisórios ou discriminatórios, drones ou qualquer outro tipo de dispositivo controlado remotamente, canetas laser, tendas, sacos de dormir, objetos pontudos, cortantes ou qualquer tipo de armamento.
+                        </p>
+                    </div>
+                </div>
+            </div>    
+        </div>
 
-            </div>
-        </section>
     </main>
+
     <footer class="footer">
         <div class="footer__visual">
             <img src="assets/img/Logo1 1.svg" alt="Festival Codechella 2023">
@@ -170,5 +146,4 @@
         </div>
     </footer>
 </body>
-
 </html>

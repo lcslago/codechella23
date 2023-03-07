@@ -126,19 +126,23 @@ header .menu--mobile:checked ~ .inner-header__menu--mobile {
 .button {
   display: flex;
   justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
   width: 280px;
   background-color: var(--primary-color);
   padding: 0.5rem 1rem;
   margin: 0 auto 2rem auto;
   box-shadow: 4px 4px 0 0 var(--tertiary-color);
   border-radius: 16px;
-  gap: 1rem;
 }
 .button p {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 2.5rem;
   color: var(--secondary-color);
+}
+.button:hover {
+  background-color: #606ADA;
 }
 
 .line-up {

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import './style.css';
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
@@ -495,7 +494,7 @@ header .menu--mobile:checked ~ .inner-header__menu--mobile {
     margin-right: 0;
   }
 }
-.banner-info {
+.banner-tickets {
   background-color: rgba(0, 0, 0, 0.2);
   position: relative;
   width: 100%;
@@ -505,16 +504,19 @@ header .menu--mobile:checked ~ .inner-header__menu--mobile {
   justify-content: center;
   align-items: center;
 }
-.banner-info::before {
+.banner-tickets::before {
   content: "";
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(../assets/img/Banner-Informações.jpg);
-  background-size: 115%;
+  background-image: url(../assets/img/Banner-Ingressos.jpg);
+  background-size: 250% 700px;
+  -o-object-fit: contain;
+     object-fit: contain;
   background-position: center;
+  background-position-y: -150px;
   opacity: 0.4;
 }
 
@@ -527,97 +529,123 @@ header .menu--mobile:checked ~ .inner-header__menu--mobile {
   line-height: 2.6rem;
   text-align: center;
   margin: 0;
-  padding-bottom: 1rem;
 }
 
-.info__about {
-  padding: 3rem 1.5rem;
+.tickets .banner-title {
+  padding: 2rem 1.5rem;
+}
+.tickets .text .form {
+  padding: 0 1.5rem;
+}
+.tickets .text .form h6 {
+  padding-bottom: 0.5rem;
+}
+.tickets .text .form__text-field {
+  min-width: 100%;
+  height: 48px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  padding: 0 0.5rem;
+  border: none;
+  box-sizing: border-box;
+}
+.tickets .text .form select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../assets/icons/arrow-drop-down-gray.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: content-box;
+}
+.tickets .text .form select:optional {
+  color: var(--tertiary-color);
+}
+.tickets .text .form .date {
+  color: var(--tertiary-color);
 }
 
-.card__ask {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.5rem;
-  padding: 1rem;
-  background-color: var(--primary-color);
-}
-.card__ask h6 {
-  margin: 0;
-}
-.card__ask img {
-  padding-right: 0.5rem;
-}
-
-.card__answer {
-  background-color: var(--quinary-color);
-  padding: 1rem;
-}
-.card__answer p {
-  margin: 0;
-  color: var(--tertiary-color);
-}
-.card__answer p a {
+  padding: 0.5rem 0 0.5rem 1rem;
   text-decoration: none;
-  border-bottom: 1px solid;
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
+  font-weight: 700;
+  width: 120px;
+  height: 35px;
+  margin: 2rem auto;
+}
+.button img {
+  width: 20px;
+  padding: 0.5rem 1rem;
+}
+.button:hover {
+  background-color: #606ADA;
 }
 
 @media screen and (min-width: 768px) {
-  .inner-header__menu--alt li:nth-child(3) .link {
+  .inner-header__menu--alt li:nth-child(4) .link {
     text-decoration: underline;
   }
-  .banner-info {
+  .banner-tickets {
     height: 384px;
   }
-  .banner-info::before {
-    background-size: 100%;
-    background-position: center;
+  .banner-tickets::before {
+    background-size: 160%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position-y: -90px;
   }
-  .banner-info h1 {
+  .banner-tickets .banner-title {
     font-size: 4rem;
     line-height: 5.2rem;
   }
-  .banner-title {
+  .tickets .banner-title {
+    padding: 2rem 3.75rem;
     font-size: 3rem;
     line-height: 4rem;
   }
-  .info__about {
-    padding: 3rem 3.75rem;
+  .tickets .text .form {
+    padding: 0 3.75rem;
   }
-  .info__about .banner-title {
-    font-size: 3rem;
-    line-height: 4rem;
-    padding-bottom: 3rem;
+  .tickets .text .form h6 {
+    margin: 0;
+    padding: 2rem 0 0.5rem 0;
   }
-  .card__ask {
-    justify-content: space-between;
+  .button {
+    margin-bottom: 3.5rem;
   }
-  .card__ask h6 {
-    padding: 0;
-  }
-  .card__ask img {
-    padding-right: 0.5rem;
-  }
-  .card__answer p {
-    padding: 0;
+  .button img {
+    margin: 0;
+    padding: 0 1rem 0 0;
   }
 }
 @media screen and (min-width: 1366px) {
-  .banner-info {
+  .banner-tickets {
     height: 407px;
   }
-  .banner-info::before {
-    background-position-y: -350px;
+  .banner-tickets::before {
+    background-size: 100%;
+    background-position-y: -110px;
   }
-  .banner-title {
-    font-size: 1rem;
+  .banner-tickets .banner-title {
+    font-size: 4rem;
     line-height: 5.2rem;
   }
-  .info__about {
-    padding: 3rem 12rem;
+  .tickets .banner-title {
+    padding: 3rem 3.75rem;
   }
-  .footer {
-    padding: 3rem 6rem 0 6rem;
+  .tickets .text .form {
+    padding: 0 20rem;
   }
-}/*# sourceMappingURL=info.css.map */
+  .tickets-container {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .tickets-container label {
+    width: 50%;
+  }
+}/*# sourceMappingURL=tickets.css.map */

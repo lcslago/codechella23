@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/tickets.css">
+    <link rel="stylesheet" href="styles/ticket-output.css">
     <link rel="icon" href="assets/icons/codechella-icon.png">
     <title>Codechella Valley Code and Techs Festival</title>
 </head>
@@ -69,53 +69,39 @@
             </li>
         </ul>
     </header>
+
     <main>
 
-        <div class="banner-tickets">
-            <h1 class="banner-title">Garanta seu Ingresso</h1>
+        <div class="banner-output">
+            <h1 class="banner-title">Seu ingresso está aqui!</h1>
         </div>
 
-        <div class="tickets">
-            <p class="banner-title">Preencha o formulário a seguir:</p>
+        <section class="ticket-output">
             <div class="text">
-                <form class="form">
-                    <label for="nome">
-                        <h6>Nome Completo:</h6>
-                        <input class="form__text-field" type="text" id="nome">
-                    </label>
-                    <label for="email">
-                        <h6>Email:</h6>
-                        <input class="form__text-field" type="email" id="email">
-                    </label>
-                    <div class="tickets-container">
-                        <label for="tipo-ingresso">
-                            <h6>Tipo de ingresso</h6>
-                            <select class="form__text-field" id="tipo-ingresso">
-                                <p>Tipo de ingresso</p>
-                                <option>Pista premium</option>
-                                <option>Pista comum</option>
-                                <option>Cadeiras térreo</option>
-                                <option>Cadeiras superiores</option>
-                                <option>Rampas</option>
-                            </select>
-                        </label>
-                        <label for="date">
-                            <h6>Data de Nascimento:</h6>
-                            <input class="form__text-field date" type="date" id="date">
-                        </label>
-                    </div>    
-                </form>
+                <h6 class="text-title">Uhul, agora sim! 
+                    <span>Seu ingresso está aqui, apresente na entrada do evento e divirta-se!</span>
+                </h6>
+                <div class="ticket-output__checkout">
+                    <div class="ticket-output__checkout-logo">
+                        <img src="assets/img/Logo1 1.svg" alt="logo do codechella">
+                        <img src="assets/icons/logo-icon.svg" alt="logo do codechella">
+                    </div>
+                    <div class="ticket-output__checkout-container">
+                        <img src="assets/img/qrcode.png" alt="QR Code para o seu ingresso">
+                        <div class="ticket-output__checkout-container-data">
+                            <h6>Moni Hillman</h6>
+                            <p>Ingresso Costesia <br>
+                                Setor Pista <br>
+                                Data: 11/03 <br>
+                                Local: São Paulo-SP</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-
-        <a class="button" href="./ticket-output.html">
-            Avançar!
-            <img src="./assets/icons/local_foward.svg" alt="Avançar">
-        </a>
-
+        </section>
 
     </main>
+
     <footer class="footer">
         <div class="footer__visual">
             <img src="assets/img/Logo1 1.svg" alt="Festival Codechella 2023">

@@ -81,11 +81,11 @@
                 <form class="form">
                     <label for="nome">
                         <h6>Nome Completo:</h6>
-                        <input class="form__text-field" type="text" id="nome">
+                        <input class="form__text-field" type="text" id="nome" autocomplete="off" required>
                     </label>
                     <label for="email">
                         <h6>Email:</h6>
-                        <input class="form__text-field" type="email" id="email">
+                        <input class="form__text-field" type="email" id="email" autocomplete="off" required>
                     </label>
                     <div class="tickets-container">
                         <label for="tipo-ingresso">
@@ -101,18 +101,19 @@
                         </label>
                         <label for="date">
                             <h6>Data de Nascimento:</h6>
-                            <input class="form__text-field date" type="date" id="date">
+                            <input class="form__text-field date" type="date" id="date" required>
                         </label>
-                    </div>    
+                    </div>
+                    <input type="submit" value="Avançar!" class="button-submit" id="button">    
                 </form>
             </div>
         </div>
 
 
-        <a class="button" href="./ticket-output.html">
+        <!-- <a class="button" href="./ticket-output.html">
             Avançar!
             <img src="./assets/icons/local_foward.svg" alt="Avançar">
-        </a>
+        </a> -->
 
 
     </main>

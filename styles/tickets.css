@@ -124,26 +124,36 @@ header .menu--mobile:checked ~ .inner-header__menu--mobile {
   margin: 1rem 0 4rem 0;
 }
 
-.button {
+.button-submit {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  text-decoration: none;
-  width: 280px;
+  align-items: center;
+  background-image: url(../assets/icons/local_foward.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: content-box;
+  box-sizing: content-box;
+  width: 150px;
+  border: none;
   background-color: var(--primary-color);
-  padding: 0.5rem 1rem;
-  margin: 0 auto 2rem auto;
+  padding: 0.5rem 2rem .5rem 1rem;
+  margin: 4rem auto 2rem auto;
   box-shadow: 4px 4px 0 0 var(--tertiary-color);
   border-radius: 16px;
-}
-.button p {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 2.5rem;
   color: var(--secondary-color);
 }
-.button:hover {
+
+.submit-link {
+  text-decoration: none;
+  width: 150px;
+}
+
+.button-submit:hover {
   background-color: #606ADA;
+  cursor: pointer;
 }
 
 .line-up {

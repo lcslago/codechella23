@@ -1,0 +1,10 @@
+@use "../abstract/variables";
+
+.banner-title {
+    text-align: center;
+    color: variables.$secondary-color;
+    font-family: variables.$secondary-font;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+}

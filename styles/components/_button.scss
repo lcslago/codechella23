@@ -1,0 +1,25 @@
+@use "../abstract/variables";
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+    width: 280px;
+    background-color: variables.$primary-color;
+    padding: 0.5rem 1rem;
+    margin: 0 auto 2rem auto;
+    box-shadow: 4px 4px 0 0 variables.$tertiary-color;
+    border-radius: 16px;
+
+    p {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        color: variables.$secondary-color;
+    }
+
+    &:hover {
+        background-color: #606ADA;
+    }
+}

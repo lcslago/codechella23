@@ -1,0 +1,64 @@
+@use "../abstract/variables";
+
+header {
+    background-color: variables.$primary-color;
+    position: relative;
+
+    .inner-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1.5rem;
+
+        &__menu {
+            padding-right: 0.4rem;
+            width: 32px;
+            height: 40px;
+        }
+
+        .menu--mobile {
+            display: none;
+        }
+    }
+
+    .inner-header__menu--mobile {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        list-style: none;
+        display: none;
+        text-align: center;
+        width: 220px;
+        background-color: variables.$primary-color;
+        padding: 0.5rem 0;
+        z-index: 1;
+        margin: 0;
+
+        li {
+            margin: 0 0.7rem;
+            padding: 0.7rem 0;
+        }
+
+        hr {
+            margin: 0 2rem;
+            border: 1px solid variables.$secondary-color;
+        }
+    }
+
+    .inner-header__menu--alt {
+        display: none;
+    }
+
+    .menu--mobile:checked~.inner-header__menu--mobile {
+        display: block;
+    }
+}
+
+.link {
+    list-style: none;
+    text-decoration: none;
+    color: variables.$secondary-color;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}

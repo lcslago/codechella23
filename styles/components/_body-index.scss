@@ -1,4 +1,5 @@
 @use "../abstract/variables";
+@use "../abstract/mixins" as *;
 
 .index-about {
     text-align: center;
@@ -58,27 +59,19 @@
             color: variables.$secondary-color;
 
             h2 {
-                font-size: 3rem;
-                font-weight: 800;
-                line-height: 3.7rem;
+                @include index-list(3rem, 800, 3.7rem);
             }
 
             h4 {
-                font-size: 2rem;
-                font-weight: 500;
-                line-height: 2.4rem;
+                @include index-list(2rem, 500, 2.4rem);
             }
 
             h5 {
-                font-size: 2.5rem;
-                font-weight: 700;
-                line-height: 3rem;
+                @include index-list(2.5rem, 700, 3rem);
             }
 
             h6 {
-                font-size: 2rem;
-                font-weight: 700;
-                line-height: 2.4rem;
+                @include index-list(2rem, 700, 2.4rem);
             }
 
             h4,

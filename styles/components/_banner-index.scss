@@ -1,4 +1,5 @@
 @use "../abstract/variables";
+@use "../abstract/mixins" as *;
 
 .banner-index {
     background-image: url(../assets/img/Banner-Homepage.jpg);
@@ -10,4 +11,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .banner-title {
+        @include banner-title;
+    }
+}
+
+.banner-bottom {
+    background-image: url(../assets/img/Banner-Homepage2.jpg);
+    background-color: variables.$background-color no-repeat;
+    background-size: 150%;
+    background-position: center;
+    margin-top: 2rem;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 338px;
 }

@@ -62,15 +62,6 @@ header .menu--mobile:checked ~ .inner-header__menu--mobile {
   line-height: 2.5rem;
 }
 
-.banner-title {
-  text-align: center;
-  color: #FFFFFF;
-  font-family: "Calistoga", cursive;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 2.6rem;
-}
-
 .text h6 {
   font-size: 2rem;
   font-weight: 700;
@@ -106,4 +97,28 @@ header .menu--mobile:checked ~ .inner-header__menu--mobile {
 }
 .button:hover {
   background-color: #606ADA;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #4650BD;
+}
+.footer img {
+  width: 234px;
+  margin: 0.5rem auto 1rem auto;
+}
+.footer p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: #FFFFFF;
+  margin: 0 0.5rem;
+}
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 2rem auto;
+  width: 32px;
+  gap: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+@use "./abstract/variables";
+@use "./abstract/mixins" as *;
+
+.banner-about {
+    @include banner;
+
+    &::before {
+        @include banner-shade ("../assets/img/Banner-A-Experiência.jpg", 155%, -20px);
+    }
+
+    h1 {
+        @include banner-title;
+    }
+}
+
+.about-about {
+    text-align: center;
+    margin: 2rem 1.5rem;
+
+    .about-img {
+        @include about-img ("../assets/img/A-Experiêcia1.jpg", 100%);
+    }
+
+    .about-second-img {
+        @include about-img ("../assets/img/A-Experiêcia2.jpg", 185%);
+        background-position: center;
+    }
+
+    .about-third-img {
+        @include about-img ("../assets/img/A-Experiêcia3.jpg", 100%);
+        background-position-y: -40px;
+    }
+}

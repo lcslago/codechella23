@@ -62,3 +62,9 @@ header {
     font-weight: 700;
     line-height: 2.5rem;
 }
+
+@media screen {
+    @media (min-width: variables.$tablet-width) {}
+
+    @media (min-width: variables.$desktop-width) {}
+}

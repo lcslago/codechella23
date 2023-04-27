@@ -1,0 +1,28 @@
+@use "../abstract/variables";
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: variables.$primary-color;
+
+    img {
+        width: 234px;
+        margin: 0.5rem auto 1rem auto;
+    }
+
+    p {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 2.5rem;
+        color: variables.$secondary-color;
+        margin: 0 0.5rem;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 2rem auto;
+        width: 32px;
+        gap: 0.5rem;
+    }
+}

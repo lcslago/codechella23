@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+.banner-about {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-about::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url("../assets/img/Banner-A-Experiência.jpg");
+  background-size: 155%;
+  background-position: -20px;
+  opacity: 0.4;
+}
+.banner-about h1 {
+  position: relative;
+  color: #FFFFFF;
+  font-family: "Calistoga", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  text-align: center;
+}
+
+.about-about {
+  text-align: center;
+  margin: 2rem 1.5rem;
+}
+.about-about .about-img {
+  background-image: url("../assets/img/A-Experiêcia1.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 381px;
+  border-radius: 16px;
+}
+.about-about .about-second-img {
+  background-image: url("../assets/img/A-Experiêcia2.jpg");
+  background-size: 185%;
+  width: 100%;
+  height: 381px;
+  border-radius: 16px;
+  background-position: center;
+}
+.about-about .about-third-img {
+  background-image: url("../assets/img/A-Experiêcia3.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 381px;
+  border-radius: 16px;
+  background-position-y: -40px;
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,72 @@
+@use "./abstract/variables";
+@use "./abstract/mixins" as *;
+
+.banner__map-sectors {
+    @include banner;
+
+    &::before {
+        @include banner-shade("../assets/img/Banner-Setores.jpg", 100% 603px, 0 320px);
+    }
+
+    h1 {
+        @include banner-title;
+    }
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        margin-top: 2rem;
+        align-self: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__legend {
+        align-self: center;
+        list-style: none;
+        margin: 1rem 0 6rem 0;
+
+        b {
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 2.5rem;
+            color: variables.$secondary-color;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.75rem;
+
+            p {
+                font-weight: 500;
+                font-size: 1.25rem;
+                line-height: 2.5rem;
+                color: variables.$secondary-color;
+            }
+        }
+    }
+}
+
+.map-sectors__about {
+    text-align: center;
+    margin: 2rem 1.5rem;
+}
+
+.map-sectors__img {
+    @include mapSectors-img("../assets/img/Pistas.jpg", 100%);
+}
+
+.map-sectors__second-img {
+    @include mapSectors-img ("../assets/img/Pista-premium.jpg", 130%);
+}
+
+.map-sectors__third-img {
+    @include mapSectors-img ("../assets/img/Cadeiras.jpg", 100%);
+}

@@ -1,0 +1,51 @@
+@use "./abstract/variables";
+@use "./abstract/mixins" as *;
+
+.banner-info {
+    @include banner;
+
+    &::before {
+        @include banner-shade("../assets/img/Banner-Informações.jpg", 115%, center);
+    }
+}
+
+.banner-title {
+    @include banner-title;
+}
+
+.info__about {
+    padding: 3rem 1.5rem;
+}
+
+.card__ask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: variables.$primary-color;
+
+    h6 {
+        margin: 0;
+    }
+
+    img {
+        padding-right: 0.5rem;
+    }
+}
+
+.card__answer {
+    background-color: variables.$quinary-color;
+    padding: 1rem;
+
+    p {
+        margin: 0;
+        color: variables.$tertiary-color;
+
+        a {
+            text-decoration: none;
+            border-bottom: 1px solid;
+            color: variables.$tertiary-color;
+        }
+    }
+}

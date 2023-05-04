@@ -1,0 +1,68 @@
+@use "./abstract/variables";
+@use "./abstract/mixins" as *;
+
+.banner-tickets {
+    @include banner;
+
+    &::before {
+        @include banner-shade("../assets/img/Banner-Ingressos.jpg", 250% 700px, center -150px);
+    }
+}
+
+.banner-title {
+    @include banner-title;
+}
+
+.tickets {
+    .banner-title {
+        padding: 2rem 1.5rem;
+    }
+
+    .text {
+        .form {
+            padding: 0 1.5rem;
+
+            h6 {
+                padding-bottom: .5rem;
+            }
+
+            select {
+                @include drop-button ("../assets/icons/arrow-drop-down-gray.png");
+
+                &:optional {
+                    color: variables.$tertiary-color;
+                }
+            }
+
+            .date {
+                color: variables.$tertiary-color;
+                @include drop-button ("../assets/icons/arrow-drop-down-gray.png");
+            }
+        }
+
+        .form__text-field {
+            color: variables.$tertiary-color;
+            min-width: 100%;
+            height: 48px;
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 2.5rem;
+            padding: 0 0.5rem;
+            border: none;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.button {
+    padding: 1rem;
+    margin: 4rem auto;
+    border: none;
+    color: variables.$secondary-color;
+    font-size: 1rem;
+    font-weight: 700;
+
+    &:hover {
+        background-color: #606ADA;
+    }
+}

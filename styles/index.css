@@ -20,6 +20,12 @@
   line-height: 2.6rem;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .banner-index .banner-title {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+}
 
 .banner-bottom {
   background-image: url(../assets/img/Banner-Homepage2.jpg);
@@ -32,6 +38,17 @@
   height: 338px;
 }
 
+@media screen and (min-width: 768px) {
+  .banner-index {
+    height: 384px;
+    background-position: center;
+  }
+  .banner-bottom {
+    background-size: 130%;
+    background-position-y: -60px;
+    background-position-x: -160px;
+  }
+}
 .index-about {
   text-align: center;
   margin: 2rem 1.5rem;
@@ -130,4 +147,56 @@
 .line-up__day--alt {
   width: 286px;
   margin-top: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .index-about__img {
+    background-size: 105%;
+    background-position: center;
+    width: 90%;
+    margin: auto;
+  }
+  .line-up {
+    text-align: center;
+  }
+  .line-up h3 {
+    margin: 6rem 0;
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+  .line-up .border--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .line-up .border--container .divisory-line {
+    border-top: 2px solid #008364;
+    width: 12%;
+    margin: auto;
+  }
+  .line-up__list {
+    margin: 2rem 3rem 5rem 3rem;
+  }
+  .line-up__list li,
+  .line-up__list .line-up__item,
+  .line-up__list .line-up__item h2 {
+    margin: 0;
+  }
+  .line-up__list .line-up__item h2 {
+    padding: 0;
+  }
+  .line-up__list--alt {
+    margin: 0 2rem;
+  }
+  .line-up__list--wrapper {
+    margin: 5rem 0 2rem 0;
+    margin-top: 5rem;
+  }
+  .line-up__day {
+    width: 417px;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 4rem;
+    padding: 1.3rem 1rem;
+  }
 }/*# sourceMappingURL=index.css.map */

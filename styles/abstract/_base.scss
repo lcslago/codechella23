@@ -6,3 +6,9 @@ body {
     padding: 0;
     margin: 0;
 }
+
+@media screen {
+    @media (min-width: variables.$tablet-width) {}
+
+    @media (min-width: variables.$desktop-width) {}
+}

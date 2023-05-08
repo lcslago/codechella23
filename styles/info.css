@@ -11,6 +11,11 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .banner-info {
+    height: 384px;
+  }
+}
 .banner-info::before {
   content: "";
   position: absolute;
@@ -23,6 +28,12 @@
   background-position: center;
   opacity: 0.4;
 }
+@media screen and (min-width: 768px) {
+  .banner-info::before {
+    background-size: 100%;
+    background-position: center;
+  }
+}
 
 .banner-title {
   position: relative;
@@ -32,6 +43,12 @@
   font-weight: 400;
   line-height: 2.6rem;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .banner-title {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
 }
 
 .info__about {

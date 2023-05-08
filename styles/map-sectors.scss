@@ -70,3 +70,9 @@
 .map-sectors__third-img {
     @include mapSectors-img ("../assets/img/Cadeiras.jpg", 100%);
 }
+
+@media screen {
+    @media (min-width: variables.$tablet-width) {}
+
+    @media (min-width: variables.$desktop-width) {}
+}

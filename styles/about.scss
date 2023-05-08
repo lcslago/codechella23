@@ -31,3 +31,45 @@
         background-position-y: -40px;
     }
 }
+
+@media screen {
+    @media (min-width: variables.$tablet-width) {
+        .inner-header__menu--alt li:first-child .link {
+            text-decoration: underline;
+        }
+
+        .about-about {
+            margin: 2rem 3.9rem;
+
+            .text {
+                margin: 2rem 0;
+
+                h6 {
+                    margin: 2rem 0 0 0;
+                    padding: 0;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0.5rem 0 2rem 0;
+                }
+
+                &--alt {
+                    margin: 2rem 3.6rem;
+                }
+            }
+
+            .about-img,
+            .about-second-img {
+                background-size: 100%;
+            }
+
+            .about-img {
+                background-position-y: -100px;
+            }
+
+        }
+    }
+
+    @media (min-width: variables.$desktop-width) {}
+}

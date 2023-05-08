@@ -23,3 +23,19 @@
         background-color: #606ADA;
     }
 }
+
+@media screen {
+    @media (min-width: variables.$tablet-width) {
+        .button {
+            width: 250px;
+            padding: 1rem;
+
+            img {
+                width: 32px;
+                height: 40px;
+            }
+        }
+    }
+
+    @media (min-width: variables.$desktop-width) {}
+}

@@ -27,3 +27,20 @@
     width: 100%;
     height: 338px;
 }
+
+@media screen {
+    @media (min-width: variables.$tablet-width) {
+        .banner-index {
+            height: 384px;
+            background-position: center;
+        }
+
+        .banner-bottom {
+            background-size: 130%;
+            background-position-y: -60px;
+            background-position-x: -160px;
+        }
+    }
+
+    @media (min-width: variables.$desktop-width) {}
+}

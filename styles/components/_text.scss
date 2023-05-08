@@ -17,3 +17,19 @@
         margin: 1rem 0 4rem 0;
     }
 }
+
+@media screen {
+    @media (min-width: variables.$tablet-width) {
+        .text {
+            h6 {
+                padding: 0 10rem;
+            }
+
+            p {
+                padding: 1.5rem 2.5rem 0 2.5rem;
+            }
+        }
+    }
+
+    @media (min-width: variables.$desktop-width) {}
+}

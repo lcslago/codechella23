@@ -73,13 +73,6 @@
 }
 .tickets .text .form .date {
   color: #444444;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url(../assets/icons/arrow-drop-down-gray.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-origin: content-box;
 }
 .tickets .text .form__text-field {
   color: #444444;
@@ -103,4 +96,31 @@
 }
 .button:hover {
   background-color: #606ADA;
+}
+
+@media screen and (min-width: 768px) {
+  .inner-header__menu--alt li:nth-child(4) .link {
+    text-decoration: underline;
+  }
+  .banner-tickets::before {
+    background-size: 160%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-position-y: -90px;
+  }
+  .tickets .banner-title {
+    padding: 2rem 3.75rem;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .tickets .text .form {
+    padding: 0 3.75rem;
+  }
+  .tickets .text .form h6 {
+    margin: 0;
+    padding: 2rem 0 0.5rem 0;
+  }
+  .button {
+    margin-bottom: 3.5rem;
+  }
 }/*# sourceMappingURL=tickets.css.map */

@@ -86,4 +86,9 @@
     width: 100%;
     height: 239px;
     border-radius: 16px;
+
+    @media screen and (min-width: variables.$tablet-width) {
+        width: 50%;
+        margin: auto;
+    }
 }

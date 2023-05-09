@@ -36,7 +36,6 @@
 
             .date {
                 color: variables.$tertiary-color;
-                @include drop-button ("../assets/icons/arrow-drop-down-gray.png");
             }
         }
 
@@ -65,4 +64,44 @@
     &:hover {
         background-color: #606ADA;
     }
+}
+
+@media screen {
+    @media (min-width: variables.$tablet-width) {
+        .inner-header__menu--alt li:nth-child(4) .link {
+            text-decoration: underline;
+        }
+
+        .banner-tickets::before {
+            background-size: 160%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            background-position-y: -90px;
+        }
+
+        .tickets {
+            .banner-title {
+                padding: 2rem 3.75rem;
+                font-size: 3rem;
+                line-height: 4rem;
+            }
+
+            .text {
+                .form {
+                    padding: 0 3.75rem;
+
+                    h6 {
+                        margin: 0;
+                        padding: 2rem 0 0.5rem 0;
+                    }
+                }
+            }
+        }
+
+        .button {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    @media (min-width: variables.$desktop-width) {}
 }

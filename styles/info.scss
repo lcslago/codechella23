@@ -49,3 +49,39 @@
         }
     }
 }
+
+@media screen {
+    @media (min-width: variables.$tablet-width) {
+        .inner-header__menu--alt li:nth-child(3) .link {
+            text-decoration: underline;
+        }
+
+        .info__about {
+            padding: 3rem 3.75rem;
+
+            .banner-title {
+                font-size: 3rem;
+                line-height: 4rem;
+                padding-bottom: 3rem;
+            }
+        }
+
+        .card__ask {
+            justify-content: space-between;
+
+            h6 {
+                padding: 0;
+            }
+
+            img {
+                padding-right: 0.5rem;
+            }
+        }
+
+        .card__answer p {
+            padding: 0;
+        }
+    }
+
+    @media (min-width: variables.$desktop-width) {}
+}

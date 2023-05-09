@@ -72,7 +72,51 @@
 }
 
 @media screen {
-    @media (min-width: variables.$tablet-width) {}
+    @media (min-width: variables.$tablet-width) {
+        .inner-header__menu--alt li:nth-child(2) .link {
+            text-decoration: underline;
+        }
+
+        .banner__map-sectors::before {
+            background-size: 100% 900px;
+            background-position-y: -480px;
+        }
+
+        .map__img {
+            padding: 2rem 2rem 0 2rem;
+        }
+
+        .map__legend {
+            margin: 2rem auto;
+
+            b {
+                font-size: 2rem;
+            }
+        }
+
+        .map-sectors__about {
+            .text--title {
+                margin: 0;
+                padding: 2.5rem 0 2.5rem 0;
+                font-size: 2.5rem;
+            }
+
+            .text {
+                h6 {
+                    margin-bottom: 0;
+                }
+
+                p {
+                    margin-top: 0;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .map-sectors__second-img {
+            background-size: 110%;
+        }
+    }
 
     @media (min-width: variables.$desktop-width) {}
 }

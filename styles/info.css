@@ -16,6 +16,11 @@
     height: 384px;
   }
 }
+@media screen and (min-width: 1366px) {
+  .banner-info {
+    height: 407px;
+  }
+}
 .banner-info::before {
   content: "";
   position: absolute;

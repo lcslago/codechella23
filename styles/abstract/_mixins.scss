@@ -13,6 +13,10 @@
     @media screen and (min-width: variables.$tablet-width) {
         height: 384px;
     }
+
+    @media screen and (min-width: variables.$desktop-width) {
+        height: 407px;
+    }
 }
 
 @mixin banner-shade ($background-image, $background-size, $background-position) {
@@ -76,6 +80,10 @@
         background-position: center;
         width: 95%;
         margin: auto;
+    }
+
+    @media screen and (min-width: variables.$desktop-width) {
+        width: 53%;
     }
 }
 

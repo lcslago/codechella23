@@ -16,6 +16,11 @@
     height: 384px;
   }
 }
+@media screen and (min-width: 1366px) {
+  .banner-about {
+    height: 407px;
+  }
+}
 .banner-about::before {
   content: "";
   position: absolute;
@@ -68,6 +73,11 @@
     margin: auto;
   }
 }
+@media screen and (min-width: 1366px) {
+  .about-about .about-img {
+    width: 53%;
+  }
+}
 .about-about .about-second-img {
   background-image: url("../assets/img/A-Experiêcia2.jpg");
   background-size: 185%;
@@ -83,6 +93,11 @@
     margin: auto;
   }
 }
+@media screen and (min-width: 1366px) {
+  .about-about .about-second-img {
+    width: 53%;
+  }
+}
 .about-about .about-third-img {
   background-image: url("../assets/img/A-Experiêcia3.jpg");
   background-size: 100%;
@@ -96,6 +111,11 @@
     background-position: center;
     width: 95%;
     margin: auto;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .about-about .about-third-img {
+    width: 53%;
   }
 }
 
@@ -126,5 +146,57 @@
   }
   .about-about .about-img {
     background-position-y: -100px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .banner-about::before {
+    background-position: top;
+  }
+  .about-about {
+    margin: 4rem 7.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+  }
+  .about-about .about--container {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-about .about--container .text {
+    width: 45%;
+    text-align: left;
+    margin: 0;
+  }
+  .about-about .about--container .text h6 {
+    margin: 2rem 0 1.5rem 0;
+  }
+  .about-about .about--container .text--alt {
+    width: 50%;
+    text-align: left;
+    margin: 0;
+  }
+  .about-about .about--container-alt {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-about .about--container-alt .text {
+    width: 50%;
+    text-align: right;
+    margin: 0;
+  }
+  .about-about .about--container-alt .text h6 {
+    margin: 2rem 0 1.5rem 0;
+  }
+  .about-about .about-img {
+    background-position-y: -95px;
+  }
+  .about-about .about-second-img {
+    background-size: 110%;
+    margin-right: 2rem;
   }
 }/*# sourceMappingURL=about.css.map */

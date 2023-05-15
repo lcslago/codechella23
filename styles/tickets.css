@@ -15,6 +15,11 @@
     height: 384px;
   }
 }
+@media screen and (min-width: 1366px) {
+  .banner-tickets {
+    height: 407px;
+  }
+}
 .banner-tickets::before {
   content: "";
   position: absolute;

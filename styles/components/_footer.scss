@@ -58,5 +58,30 @@
         }
     }
 
-    @media (min-width: variables.$desktop-width) {}
+    @media (min-width: variables.$desktop-width) {
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem 6rem 0 6rem;
+            gap: 8rem;
+            text-align: left;
+            margin: 0;
+
+            img {
+                width: 307px;
+                margin: 0;
+            }
+
+            &--container {
+                p {
+                    margin-top: 0.5rem;
+                }
+
+                .footer__icons {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 }

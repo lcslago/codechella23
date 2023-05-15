@@ -91,6 +91,21 @@ header .menu--mobile:checked ~ .inner-header__menu--mobile {
     color: #FFFFFF;
   }
 }
+@media screen and (min-width: 1366px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+  }
+  header .inner-header img {
+    width: 100%;
+  }
+  header .inner-header__menu--alt {
+    gap: 2rem;
+    padding: 0;
+  }
+}
 .text h6 {
   font-size: 2rem;
   font-weight: 700;
@@ -193,5 +208,26 @@ header .menu--mobile:checked ~ .inner-header__menu--mobile {
   }
   .footer--container .footer__icons {
     margin-right: 3.5rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 6rem 0 6rem;
+    gap: 8rem;
+    text-align: left;
+    margin: 0;
+  }
+  .footer img {
+    width: 307px;
+    margin: 0;
+  }
+  .footer--container p {
+    margin-top: 0.5rem;
+  }
+  .footer--container .footer__icons {
+    margin-right: 0;
   }
 }/*# sourceMappingURL=style.css.map */

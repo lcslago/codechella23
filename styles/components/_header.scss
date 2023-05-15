@@ -100,5 +100,23 @@ header {
         }
     }
 
-    @media (min-width: variables.$desktop-width) {}
+    @media (min-width: variables.$desktop-width) {
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+
+            .inner-header {
+                img {
+                    width: 100%;
+                }
+
+                &__menu--alt {
+                    gap: 2rem;
+                    padding: 0;
+                }
+            }
+        }
+    }
 }

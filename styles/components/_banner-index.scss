@@ -42,5 +42,17 @@
         }
     }
 
-    @media (min-width: variables.$desktop-width) {}
+    @media (min-width: variables.$desktop-width) {
+        .banner-index {
+            height: 407px;
+            background-position: center;
+        }
+
+        .banner-bottom {
+            margin-top: 10rem;
+            background-size: 100%;
+            background-position: center;
+            background-position-y: -133px;
+        }
+    }
 }

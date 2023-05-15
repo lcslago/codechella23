@@ -174,5 +174,75 @@
         }
     }
 
-    @media (min-width: variables.$desktop-width) {}
+    @media (min-width: variables.$desktop-width) {
+        .index-about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4rem 5rem;
+            gap: 5rem;
+
+            &__img {
+                background-size: 115%;
+                width: 50%;
+                margin: 0;
+            }
+        }
+
+        .index-text--container {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 42%;
+            gap: 1.5rem;
+
+            .text {
+                margin: 0;
+
+                h6 {
+                    padding: 0;
+                    margin: 0 auto 1.5rem auto;
+                    width: 88%;
+                }
+
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            .button {
+                padding: 0.5rem 1rem;
+                margin: 0;
+            }
+        }
+
+        .line-up {
+            h3 {
+                margin: 5rem 0;
+            }
+
+            .border--container {
+                justify-content: space-evenly;
+                margin: 0 3rem;
+
+                .divisory-line {
+                    width: 25%;
+                }
+            }
+
+            &__day {
+                padding: 1rem;
+            }
+
+            &__list {
+                margin: 2rem 6rem 5rem 6rem;
+            }
+
+            &__list--alt {
+                margin: 0 4.5rem;
+            }
+        }
+    }
 }

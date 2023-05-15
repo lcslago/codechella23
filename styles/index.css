@@ -49,6 +49,18 @@
     background-position-x: -160px;
   }
 }
+@media screen and (min-width: 1366px) {
+  .banner-index {
+    height: 407px;
+    background-position: center;
+  }
+  .banner-bottom {
+    margin-top: 10rem;
+    background-size: 100%;
+    background-position: center;
+    background-position-y: -133px;
+  }
+}
 .index-about {
   text-align: center;
   margin: 2rem 1.5rem;
@@ -198,5 +210,62 @@
     font-size: 3rem;
     line-height: 4rem;
     padding: 1.3rem 1rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .index-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 5rem;
+    gap: 5rem;
+  }
+  .index-about__img {
+    background-size: 115%;
+    width: 50%;
+    margin: 0;
+  }
+  .index-text--container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 42%;
+    gap: 1.5rem;
+  }
+  .index-text--container .text {
+    margin: 0;
+  }
+  .index-text--container .text h6 {
+    padding: 0;
+    margin: 0 auto 1.5rem auto;
+    width: 88%;
+  }
+  .index-text--container .text p {
+    padding: 0;
+    margin: 0;
+  }
+  .index-text--container .button {
+    padding: 0.5rem 1rem;
+    margin: 0;
+  }
+  .line-up h3 {
+    margin: 5rem 0;
+  }
+  .line-up .border--container {
+    justify-content: space-evenly;
+    margin: 0 3rem;
+  }
+  .line-up .border--container .divisory-line {
+    width: 25%;
+  }
+  .line-up__day {
+    padding: 1rem;
+  }
+  .line-up__list {
+    margin: 2rem 6rem 5rem 6rem;
+  }
+  .line-up__list--alt {
+    margin: 0 4.5rem;
   }
 }/*# sourceMappingURL=index.css.map */

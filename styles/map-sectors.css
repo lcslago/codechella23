@@ -171,4 +171,80 @@
   .map-sectors__second-img {
     background-size: 110%;
   }
+}
+@media screen and (min-width: 1366px) {
+  .banner-info::before {
+    background-size: 100% 930px;
+    background-position-y: -485px;
+  }
+  .map {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 7rem 0 7rem;
+  }
+  .map__legend {
+    margin: 0;
+  }
+  .map-sectors__about {
+    margin: 5rem 0 0 0;
+  }
+  .map-sectors__about .text {
+    margin: 0;
+  }
+  .map-sectors__about .text h6 {
+    margin: 0;
+    padding: 1rem;
+  }
+  .map-sectors__about .text p {
+    margin: 0;
+    padding: 0;
+  }
+  .map-sectors__about .map-sectors--container {
+    display: flex;
+    height: 700px;
+    margin: 2rem 5.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .map-sectors__about .map-sectors--container .map-sectors--child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin-bottom: auto;
+  }
+  .map-sectors__about .map-sectors--container .map-sectors--child h6 {
+    margin: 0;
+    padding: 1rem 0 2rem 0;
+  }
+  .map-sectors__about .map-sectors--container .map-sectors--child p {
+    margin: 0 0.7rem;
+    padding: 0;
+  }
+  .map-sectors__about .map-sectors--container .second--container {
+    margin-top: auto;
+  }
+  .map-sectors__about .map-sectors--container .second--container h6 {
+    padding: 1rem 0 2rem 0;
+  }
+  .map-sectors__about .map-sectors--container .second--container p {
+    margin: 0;
+    padding: 0 0.8rem;
+  }
+  .map-sectors__about .map-sectors--container .third--container p {
+    padding: 0;
+    margin: 0 1rem;
+  }
+  .map-sectors__img {
+    margin: 0;
+    padding: 0;
+  }
+  .map-sectors__img,
+  .map-sectors__second-img,
+  .map-sectors__third-img {
+    width: 27vw;
+  }
 }/*# sourceMappingURL=map-sectors.css.map */

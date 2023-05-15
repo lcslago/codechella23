@@ -118,5 +118,98 @@
         }
     }
 
-    @media (min-width: variables.$desktop-width) {}
+    @media (min-width: variables.$desktop-width) {
+        .banner-info::before {
+            background-size: 100% 930px;
+            background-position-y: -485px;
+        }
+
+        .map {
+            flex-direction: row;
+            align-items: center;
+            gap: 3rem;
+            padding: 0 7rem 0 7rem;
+        }
+
+        .map__legend {
+            margin: 0;
+        }
+
+        .map-sectors__about {
+            margin: 5rem 0 0 0;
+
+            .text {
+                margin: 0;
+
+                h6 {
+                    margin: 0;
+                    padding: 1rem;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .map-sectors--container {
+                display: flex;
+                height: 700px;
+                margin: 2rem 5.5rem;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                .map-sectors--child {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 33%;
+                    margin-bottom: auto;
+
+                    h6 {
+                        margin: 0;
+                        padding: 1rem 0 2rem 0;
+                    }
+
+                    p {
+                        margin: 0 0.7rem;
+                        padding: 0;
+                    }
+                }
+
+                .second--container {
+                    margin-top: auto;
+
+                    h6 {
+                        padding: 1rem 0 2rem 0;
+                    }
+
+                    p {
+                        margin: 0;
+                        padding: 0 0.8rem;
+                    }
+                }
+
+                .third--container {
+                    p {
+                        padding: 0;
+                        margin: 0 1rem;
+                    }
+                }
+            }
+        }
+
+        .map-sectors__img {
+            margin: 0;
+            padding: 0;
+        }
+
+        .map-sectors__img,
+        .map-sectors__second-img,
+        .map-sectors__third-img {
+            width: 27vw;
+        }
+    }
 }

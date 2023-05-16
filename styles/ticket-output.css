@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+.banner-output {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .banner-output {
+    height: 384px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .banner-output {
+    height: 407px;
+  }
+}
+.banner-output::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url("../assets/img/Banner-Retire-Ingresso.jpg");
+  background-size: 120%;
+  background-position: center;
+  opacity: 0.4;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (min-width: 768px) {
+  .banner-output::before {
+    background-size: 100%;
+    background-position: center;
+  }
+}
+
+.banner-title {
+  position: relative;
+  color: #FFFFFF;
+  font-family: "Calistoga", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .banner-title {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+}
+
+.ticket-output {
+  text-align: center;
+  padding: 0 1.5rem 4rem 1.5rem;
+}
+.ticket-output .text {
+  margin: 0;
+  padding: 0;
+}
+.ticket-output .text-title {
+  padding: 2.5rem 0 2rem 0;
+}
+.ticket-output__checkout {
+  width: 100%;
+  background: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.ticket-output__checkout-container {
+  padding: 0 2rem 2rem 2rem;
+}
+.ticket-output__checkout-container img {
+  width: 80%;
+}
+.ticket-output__checkout-container h6 {
+  padding: 2rem 0 1rem 0;
+  margin: 0;
+}
+.ticket-output__checkout-container p {
+  padding: 0 1.9rem;
+  margin: 0;
+}
+
+.ticket-output__checkout-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  gap: 6.2rem;
+}
+.ticket-output__checkout-logo img:first-child {
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .inner-header__menu--alt li:nth-child(4) .link {
+    text-decoration: underline;
+  }
+  .ticket-output {
+    padding: 0 3.75rem 4rem 3.75rem;
+  }
+  .ticket-output .text-title {
+    padding: 2.5rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .ticket-output__checkout-container img {
+    width: 50%;
+  }
+  .ticket-output__checkout-container h6 {
+    padding: 2rem 0 1rem 0;
+    margin: 0;
+  }
+  .ticket-output__checkout-container p {
+    padding: 0 1.9rem;
+    margin: 0;
+  }
+  .ticket-output__checkout-logo img:first-child {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .banner-output::before {
+    background-position-y: -250px;
+  }
+  .ticket-output {
+    padding: 0 20.25rem 4rem 20.25rem;
+    text-align: left;
+  }
+  .ticket-output .text-title {
+    text-align: center;
+    padding: 2.5rem 0 2rem 0;
+    display: block;
+  }
+  .ticket-output__checkout-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  .ticket-output__checkout-container img {
+    width: 30%;
+  }
+  .ticket-output__checkout-container h6 {
+    padding: 0 0 1.5rem 0;
+  }
+  .ticket-output__checkout-container p {
+    padding: 0;
+  }
+  .ticket-output__checkout-logo img:first-child {
+    width: 20%;
+  }
+}/*# sourceMappingURL=ticket-output.css.map */

@@ -83,5 +83,13 @@
         }
     }
 
-    @media (min-width: variables.$desktop-width) {}
+    @media (min-width: variables.$desktop-width) {
+        .banner-info::before {
+            background-position-y: -350px;
+        }
+
+        .info__about {
+            padding: 3rem 12rem;
+        }
+    }
 }

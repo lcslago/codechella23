@@ -128,4 +128,23 @@
   .button {
     margin-bottom: 3.5rem;
   }
+}
+@media screen and (min-width: 1366px) {
+  .banner-tickets::before {
+    background-size: 100%;
+    background-position-y: -110px;
+  }
+  .tickets .banner-title {
+    padding: 3rem 3.75rem;
+  }
+  .tickets .text .form {
+    padding: 0 20rem;
+  }
+  .tickets-container {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .tickets-container label {
+    width: 50%;
+  }
 }/*# sourceMappingURL=tickets.css.map */

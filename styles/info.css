@@ -113,4 +113,12 @@
   .card__answer p {
     padding: 0;
   }
+}
+@media screen and (min-width: 1366px) {
+  .banner-info::before {
+    background-position-y: -350px;
+  }
+  .info__about {
+    padding: 3rem 12rem;
+  }
 }/*# sourceMappingURL=info.css.map */

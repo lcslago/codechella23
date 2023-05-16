@@ -103,5 +103,31 @@
         }
     }
 
-    @media (min-width: variables.$desktop-width) {}
+    @media (min-width: variables.$desktop-width) {
+        .banner-tickets::before {
+            background-size: 100%;
+            background-position-y: -110px;
+        }
+
+        .tickets {
+            .banner-title {
+                padding: 3rem 3.75rem;
+            }
+
+            .text {
+                .form {
+                    padding: 0 20rem;
+                }
+            }
+        }
+
+        .tickets-container {
+            display: flex;
+            gap: 1.5rem;
+
+            label {
+                width: 50%;
+            }
+        }
+    }
 }

@@ -17,7 +17,7 @@ form.addEventListener("submit", (e) => {
 
 	localStorage.setItem("register", JSON.stringify(responseList));
 
-	window.location.href = "../ticket-output.html";
+	window.location.href = "./ticket-output.html";
 })
 
 window.addEventListener("keypress", (e) => {

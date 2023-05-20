@@ -20,10 +20,17 @@
 
     .text {
         .form {
-            padding: 0 1.5rem;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+
+            fieldset {
+                height: 125px;
+            }
 
             h6 {
                 padding-bottom: .5rem;
+                margin: 0;
             }
 
             select {
@@ -37,6 +44,28 @@
             .date {
                 color: variables.$tertiary-color;
             }
+
+            &__error {
+                display: block;
+                color: variables.$secondary-color;
+                background-color: variables.$warning-color;
+                padding: 0 .5rem;
+                font-weight: bold;
+                line-height: 1.5rem;
+                pointer-events: none;
+            }
+
+            .button {
+                padding: 1rem;
+                margin: 4rem auto;
+                border: none;
+                color: variables.$secondary-color;
+                font-size: 1rem;
+                font-weight: 700;
+                opacity: .5;
+                cursor: not-allowed;
+            }
+
         }
 
         .form__text-field {
@@ -50,19 +79,6 @@
             border: none;
             box-sizing: border-box;
         }
-    }
-}
-
-.button {
-    padding: 1rem;
-    margin: 4rem auto;
-    border: none;
-    color: variables.$secondary-color;
-    font-size: 1rem;
-    font-weight: 700;
-
-    &:hover {
-        background-color: #606ADA;
     }
 }
 
@@ -92,7 +108,7 @@
 
                     h6 {
                         margin: 0;
-                        padding: 2rem 0 0.5rem 0;
+                        padding: .3rem 0;
                     }
                 }
             }
@@ -125,7 +141,7 @@
             display: flex;
             gap: 1.5rem;
 
-            label {
+            fieldset {
                 width: 50%;
             }
         }

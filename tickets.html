@@ -81,37 +81,52 @@
         <div class="tickets">
             <p class="banner-title">Preencha o formulário a seguir:</p>
             <div class="text">
-                <form class="form">
-                    <label for="nome">
-                        <h6>Nome Completo:</h6>
-                        <input class="form__text-field" type="text" id="nome" autocomplete="off" required>
-                    </label>
-                    <label for="email">
-                        <h6>Email:</h6>
-                        <input class="form__text-field" type="email" id="email" autocomplete="off" required>
-                    </label>
-                    <div class="tickets-container">
-                        <label for="tipo-ingresso">
-                            <h6>Tipo de ingresso</h6>
-                            <select class="form__text-field" id="tipo-ingresso">
-                                <p>Tipo de ingresso</p>
-                                <option>Pista premium</option>
-                                <option>Pista comum</option>
-                                <option>Cadeiras térreo</option>
-                                <option>Cadeiras superiores</option>
-                                <option>Rampas</option>
-                            </select>
-                        </label>
-                        <label for="date">
-                            <h6>Data de Nascimento:</h6>
-                            <input class="form__text-field date" type="date" id="date" required autocomplete="off">
-                        </label>
+                <form class="form" data-form>
+                    <div class="form-container">
+                        <fieldset>
+                            <label for="nome">
+                                <h6>Nome Completo:</h6>
+                                <input class="form__text-field" type="text" name="name" id="nome" autocomplete="off"
+                                    minlength="3" required>
+                                <span class="form__error"></span>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="email">
+                                <h6>Email:</h6>
+                                <input class="form__text-field" type="email" name="email" id="email" autocomplete="off"
+                                    minlength="4" required>
+                                <span class="form__error"></span>
+                            </label>
+                        </fieldset>
                     </div>
-                    <input type="submit" value="Avançar!" class="button" id="button">
+                    <div class="tickets-container">
+                        <fieldset>
+                            <label for="ticket-type">
+                                <h6>Tipo de ingresso</h6>
+                                <select class="form__text-field" id="ticket-type" name="ticket-type">
+                                    <p>Tipo de ingresso</p>
+                                    <option>Pista premium</option>
+                                    <option>Pista comum</option>
+                                    <option>Cadeiras térreo</option>
+                                    <option>Cadeiras superiores</option>
+                                    <option>Rampas</option>
+                                </select>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="date">
+                                <h6>Data de Nascimento:</h6>
+                                <input name="birthday" class="form__text-field date" type="date" id="date" required
+                                    autocomplete="off">
+                                <span class="form__error"></span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <input type="submit" value="Avançar!" disabled class="button" id="button" data-submit>
                 </form>
             </div>
         </div>
-        <script src="scripts/main.js"></script>
     </main>
     <footer class="footer">
         <div class="footer__visual">
@@ -130,6 +145,7 @@
             <p>Desenvolvido por Lucas Lago. <br> Projeto fictício sem fins comerciais.</p>
         </div>
     </footer>
+    <script src="./js/ticket.js" type="module"></script>
 </body>
 
 </html>

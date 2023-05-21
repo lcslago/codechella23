@@ -62,8 +62,15 @@
                 color: variables.$secondary-color;
                 font-size: 1rem;
                 font-weight: 700;
-                opacity: .5;
                 cursor: not-allowed;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:hover {
+                    background-color: variables.$primary-color;
+                }
             }
 
         }

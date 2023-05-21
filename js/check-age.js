@@ -15,3 +15,14 @@ function validateAge(date) {
 	return today >= today18;
 
 }
+
+function validateYear(date) {
+	const currentYear = new Date().getUTCFullYear();
+	const yearGiven = new Date(date.getUTCFullYear());
+
+	return yearGiven < currentYear - 100;
+}
+
+export const validateAgeYear = {
+	validateYear
+}

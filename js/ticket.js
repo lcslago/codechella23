@@ -1,9 +1,15 @@
 import checkOfAge from "./check-age.js";
+import { validateAgeYear } from "./check-age.js";
 import { buttonControls } from "./button-control.js";
 
 const form = document.querySelector("[data-form");
 const formCamp = document.querySelectorAll("[required]");
 const submitBtn = document.querySelector("[data-submit]");
+
+submitBtn.addEventListener("mouseover", () => {
+	submitBtn.focus();
+	validateForm();
+})
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
@@ -23,6 +29,8 @@ form.addEventListener("submit", (e) => {
 window.addEventListener("keypress", (e) => {
 	if (e.key == "Enter") {
 		e.preventDefault();
+		submitBtn.focus();
+		validateForm();
 	}
 
 })
@@ -48,7 +56,7 @@ const messages = {
 	},
 	birthday: {
 		valueMissing: 'O campo de data de nascimento não pode estar vazio.',
-		customError: 'Você deve ser maior que 18 anos para se cadastrar.'
+		customError: 'Você deve ser maior que 18 anos para se cadastrar.',
 	}
 }
 
@@ -79,6 +87,10 @@ function checkCamp(camp) {
 		camp.style.border = "2px solid rgb(255, 41, 41)";
 		buttonControls.deactivateButton(submitBtn);
 
+	} else if (validateAgeYear.validateYear(new Date(camp.value))) {
+		messageError.innerHTML = "Por favor, insira uma data de nascimento válida.";
+		camp.style.border = "2px solid rgb(255, 41, 41)";
+		buttonControls.deactivateButton(submitBtn);
 	} else {
 		messageError.innerHTML = "";
 		camp.style.border = "none";
@@ -89,3 +101,8 @@ function checkCamp(camp) {
 	}
 }
 
+function validateForm() {
+	formCamp.forEach((camp) => {
+		checkCamp((camp));
+	})
+}

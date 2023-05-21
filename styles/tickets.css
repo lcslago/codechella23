@@ -101,8 +101,13 @@
   color: #FFFFFF;
   font-size: 1rem;
   font-weight: 700;
-  opacity: 0.5;
   cursor: not-allowed;
+}
+.tickets .text .form .button:focus {
+  outline: none;
+}
+.tickets .text .form .button:hover {
+  background-color: #4650BD;
 }
 .tickets .text .form__text-field {
   color: #444444;

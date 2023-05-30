@@ -96,7 +96,7 @@ function checkCamp(camp) {
 		camp.style.border = "none";
 	}
 
-	if (form.checkValidity()) {
+	if (form.checkValidity() && !validateAgeYear.validateYear(new Date(camp.value))) {
 		buttonControls.activeButton(submitBtn);
 	}
 }

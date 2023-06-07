@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="styles/ticket-output.css">
     <link rel="icon" href="assets/icons/codechella-icon.png">
     <title>Codechella Valley Code and Techs Festival</title>
+    <script>
+        if (document.referrer === "") {
+            window.location.href = "./tickets.html";
+        }
+    </script>
 </head>
 
 <body>
@@ -92,17 +97,18 @@
                     <div class="ticket-output__checkout-container">
                         <img src="assets/img/qrcode.png" alt="QR Code para o seu ingresso">
                         <div class="ticket-output__checkout-container-data">
-                            <h6>Moni Hillman</h6>
+                            <h6 data-name>XXXX</h6>
                             <p>Ingresso Costesia <br>
-                                Setor Pista <br>
+                                <span data-sector>XXXX</span> <br>
                                 Data: 11/03 <br>
-                                Local: São Paulo-SP</p>
+                                Local: São Paulo-SP
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+        <script src="./js/ticket-output.js"></script>
     </main>
 
     <footer class="footer">

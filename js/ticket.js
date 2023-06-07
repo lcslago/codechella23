@@ -17,7 +17,7 @@ form.addEventListener("submit", (e) => {
 	const responseList = {
 		"nome": e.target.elements["name"].value,
 		"email": e.target.elements["email"].value,
-		"ticket-type": e.target.elements["ticket-type"].value,
+		"ticket": e.target.elements["ticket"].value,
 		"birthday": e.target.elements["birthday"].value
 	}
 

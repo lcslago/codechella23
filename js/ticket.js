@@ -14,8 +14,11 @@ submitBtn.addEventListener("mouseover", () => {
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
 
+	const userName = e.target.elements["name"].value;
+	const nameConverted = convertName(userName);
+
 	const responseList = {
-		"nome": e.target.elements["name"].value,
+		"nome": nameConverted,
 		"email": e.target.elements["email"].value,
 		"ticket": e.target.elements["ticket"].value,
 		"birthday": e.target.elements["birthday"].value
@@ -105,4 +108,14 @@ function validateForm() {
 	formCamp.forEach((camp) => {
 		checkCamp((camp));
 	})
+}
+
+function convertName(name) {
+	name = name.toLowerCase();
+	let nameSplit = name.split(" ");
+	for (let i = 0; i < nameSplit.length; i++) {
+		nameSplit[i] = nameSplit[i].charAt(0).toUpperCase() + nameSplit[i].slice(1);
+	}
+	let nameSlice = [nameSplit[0], nameSplit[nameSplit.length - 1]];
+	return nameSlice.join(" ");
 }

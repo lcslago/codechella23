@@ -1,5 +1,5 @@
 const userName = document.querySelector("[data-name]");
-const userSector = document.querySelector("[data-sector");
+const userSector = document.querySelector("[data-sector]");
 
 window.addEventListener('load', () => {
     const userData = JSON.parse(localStorage.getItem("register"));

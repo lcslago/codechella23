@@ -22,15 +22,13 @@
     justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 1.5rem 1rem 1rem;
     background-color: variables.$primary-color;
+    cursor: pointer;
+    user-select: none;
 
     h6 {
         margin: 0;
-    }
-
-    img {
-        padding-right: 0.5rem;
     }
 }
 
@@ -72,10 +70,6 @@
             h6 {
                 padding: 0;
             }
-
-            img {
-                padding-right: 0.5rem;
-            }
         }
 
         .card__answer p {
@@ -90,6 +84,10 @@
 
         .info__about {
             padding: 3rem 12rem;
+        }
+
+        .card__ask:hover {
+            background-color: #525bbe;
         }
     }
 }

@@ -27,7 +27,7 @@
 
 <p align="center">Além das mensagens básicas de validação, o Javascript também foi usado para validar datas de nascimento que estejam dentro das regras do evento: Maior de 18 anos e que seja uma data de nascimento válida.</p>
 
-<div align="center"><picture><img src="https://github.com/lcslago/codechella23/assets/121822458/69b1dce6-fe70-469e-8efd-c831058a9700" width="45%"></picture> &nbsp; &nbsp; <picture><img src="https://github.com/lcslago/codechella23/assets/121822458/83e575e1-e458-4a93-bb89-2ea4e9dfb448" width="45%"></picture></div>
+<div align="center"><img src="https://github.com/lcslago/codechella23/assets/121822458/69b1dce6-fe70-469e-8efd-c831058a9700" width="45%"> &nbsp; &nbsp; <img src="https://github.com/lcslago/codechella23/assets/121822458/83e575e1-e458-4a93-bb89-2ea4e9dfb448" width="45%"></div>
 
 # Técnicas usadas:
 
